@@ -1,5 +1,6 @@
 # Normalize EOL for all files that Git considers text files.
 * text=auto eol=lf
+src/Assets/00General3DAssets/mansion[[:space:]]draft2.glb filter=lfs diff=lfs merge=lfs -text
 *.gitignore filter=lfs diff=lfs merge=lfs -text
 *.gd filter=lfs diff=lfs merge=lfs -text
 *.tscn filter=lfs diff=lfs merge=lfs -text
