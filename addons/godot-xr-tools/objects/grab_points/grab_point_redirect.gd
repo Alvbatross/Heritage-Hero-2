@@ -1,17 +1,3 @@
-@tool
-class_name XRToolsGrabPointRedirect
-extends XRToolsGrabPoint
-
-
-## Grab point to redirect grabbing to
-@export var target : XRToolsGrabPoint
-
-
-## Evaluate fitness of the proposed grab, with 0.0 for not allowed.
-func can_grab(grabber : Node3D, current : XRToolsGrabPoint) -> float:
-	# Fail if no target
-	if not is_instance_valid(target):
-		return 0.0
-
-	# Consult the target
-	return target.can_grab(grabber, current)
+version https://git-lfs.github.com/spec/v1
+oid sha256:a71dc178d4f9a56e4560e7c0f5f3ddb0dd66c38ac075dc4ba78eb66cf34bfb77
+size 419

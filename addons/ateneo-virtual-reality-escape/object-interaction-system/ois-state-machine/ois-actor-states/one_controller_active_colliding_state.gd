@@ -1,19 +1,3 @@
-class_name OneControllerActiveCollidingState
-extends OISActorState
-
-
-func enter_state(_msg: Dictionary = {}) -> void:
-	pass
-
-
-func exit_state() -> void:
-	pass
-
-
-func physics_update(_delta : float) -> void:
-	if _ois_actor_state_machine.left_hand_state_machine.state == "IdleState" and  _ois_actor_state_machine.right_hand_state_machine.state == "IdleState":
-		_ois_actor_state_machine.transition_to("IdleState", {})
-	if _ois_actor_state_machine.left_hand_state_machine.state == "ActiveCollidingState" and _ois_actor_state_machine.right_hand_state_machine.state == "ActiveCollidingState":
-		_ois_actor_state_machine.transition_to("TwoControllerActiveCollidingState", {})
-	
-	
+version https://git-lfs.github.com/spec/v1
+oid sha256:b18b219a711b14823be5db587976122b6fb1b3197b489fd38793bace115376ae
+size 673

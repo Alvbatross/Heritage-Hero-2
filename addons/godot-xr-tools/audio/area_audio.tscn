@@ -1,8 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://duqehif60vcjg"]
-
-[ext_resource type="Script" path="res://addons/godot-xr-tools/audio/area_audio.gd" id="1_q1jr0"]
-
-[node name="AreaAudio" type="AudioStreamPlayer3D"]
-unit_size = 3.0
-max_distance = 100.0
-script = ExtResource("1_q1jr0")
+version https://git-lfs.github.com/spec/v1
+oid sha256:776c3a69fc171d246479b22cf34e767e416bd3a8d2540d4fdbb8b7eae57f77bd
+size 278

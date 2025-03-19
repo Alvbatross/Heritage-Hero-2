@@ -1,7 +1,3 @@
-class_name XRToolsInteractableBody
-extends Node3D
-# This should extend from PhysicsBody3D but https://github.com/godotengine/godot/issues/46073
-
-
-## Signal when pointer event occurs on body
-signal pointer_event(event)
+version https://git-lfs.github.com/spec/v1
+oid sha256:facd62d0b182ec07f3bbcc8fc1221e6743d811fbd6cbbe9ef81d1dadc14708aa
+size 218

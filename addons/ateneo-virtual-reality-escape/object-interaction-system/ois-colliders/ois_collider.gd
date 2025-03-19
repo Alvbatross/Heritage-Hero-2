@@ -1,19 +1,3 @@
-class_name OISCollider
-extends OIS
-
-signal body_entered(body)
-signal body_exited(body)
-
-@export_flags_3d_physics var ois_collision_layer : int = COLLISION_LAYER
-
-@onready var actor : OISActorComponent = get_parent()
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	if actor is OISActorComponent:
-		body_entered.connect(actor._on_ois_receiver_collision_entered)
-		body_exited.connect(actor._on_ois_receiver_collision_exited)
-
-
-func collider_enabled(b: bool) -> void:
-	pass
+version https://git-lfs.github.com/spec/v1
+oid sha256:aeda96b595f72daef83a74fefb7dde4c22ab0e9e868df11eef346ab619aa702a
+size 513

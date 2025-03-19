@@ -1,10 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://cjyilbm4ucc7s"]
-
-[ext_resource type="Script" path="res://addons/godot-xr-tools/objects/climbable.gd" id="1"]
-
-[node name="Climbable" type="StaticBody3D"]
-collision_layer = 262145
-collision_mask = 0
-script = ExtResource("1")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+version https://git-lfs.github.com/spec/v1
+oid sha256:bb18ca51855f1442302ae5fa7c775153b0c1faa4a82416771d8465f62957b51a
+size 334

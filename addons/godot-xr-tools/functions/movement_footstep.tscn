@@ -1,8 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://0xlsitpu17r1"]
-
-[ext_resource type="Script" path="res://addons/godot-xr-tools/functions/movement_footstep.gd" id="1"]
-
-[node name="MovementFootstep" type="Node" groups=["movement_providers"]]
-script = ExtResource("1")
-
-[node name="PlayerSettings" type="AudioStreamPlayer3D" parent="."]
+version https://git-lfs.github.com/spec/v1
+oid sha256:742df401ef1230f2bd212d2609b5de315146aca05e51ef7cdf068a96f06f7d46
+size 329

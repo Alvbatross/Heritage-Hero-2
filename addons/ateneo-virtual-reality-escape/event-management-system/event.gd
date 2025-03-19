@@ -1,11 +1,3 @@
-class_name Event
-extends Resource
-
-var event_name : String = ""
-
-# Base Parameters for Event
-var event_parameters = {
-	"Event_Name" : "",
-	"Event_Prerequisite_Flags" : [],
-	"Event_Completion_Flags" : [],
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:04257b371e8d9b2cf3e6e256f5cc6ebf40c3d68c46fd17ec74fb0773dee54359
+size 206

@@ -1,28 +1,3 @@
-@tool
-@icon("res://addons/godot-xr-tools/editor/icons/audio.svg")
-class_name XRToolsAreaAudioType
-extends Resource
-
-
-## XRTools Area Audio Type Resource
-##
-## This resource defines the audio stream to play when
-## a objects enters it
-
-
-## Surface name
-@export var name : String = ""
-
-## Optional audio stream to play when the player lands on this surface
-@export var touch_sound : AudioStream
-
-
-# This method checks for configuration issues.
-func _get_configuration_warnings() -> PackedStringArray:
-	var warnings := PackedStringArray()
-
-	if name == "":
-		warnings.append("Area audio type must have a name")
-
-	# Return warnings
-	return warnings
+version https://git-lfs.github.com/spec/v1
+oid sha256:7be88f6b941e14830db7697bf7c46127339716d3821f4a3e4cd3101d9bcc369d
+size 644

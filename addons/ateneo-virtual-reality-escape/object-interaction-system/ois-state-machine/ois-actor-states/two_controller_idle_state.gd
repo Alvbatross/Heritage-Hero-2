@@ -1,14 +1,3 @@
-class_name TwoControllerIdleState
-extends OISActorState
-
-
-func enter_state(_msg: Dictionary = {}) -> void:
-	_ois_actor_state_machine.get_actor_component().set_receiver(null)
-
-func exit_state() -> void:
-	pass
-
-
-func physics_update(_delta : float) -> void:
-	if _ois_actor_state_machine.left_hand_state_machine.state == "ActiveState" or _ois_actor_state_machine.right_hand_state_machine.state == "ActiveState":
-		_ois_actor_state_machine.transition_to("ActiveState")
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d40764c0069cdff5951cb50182a5f2e01a5ebcad3ece6e1f69e8a0e946798b1
+size 464

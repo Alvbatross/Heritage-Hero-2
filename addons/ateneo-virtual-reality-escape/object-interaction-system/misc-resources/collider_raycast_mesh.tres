@@ -1,7 +1,3 @@
-[gd_resource type="BoxMesh" load_steps=2 format=3 uid="uid://dho0uqpnmuhn6"]
-
-[ext_resource type="Material" uid="uid://be0o818winf1k" path="res://addons/ateneo-virtual-reality-escape/object-interaction-system/misc-resources/collider_raycast_material.tres" id="1_dnobc"]
-
-[resource]
-material = ExtResource("1_dnobc")
-size = Vector3(0.002, 0.002, 1)
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d890d5ffe5a3886aebe73a247629f960061c72692ee55934bccf7f6f53eb850
+size 348

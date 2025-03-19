@@ -1,13 +1,3 @@
-shader_type spatial;
-render_mode depth_test_disabled, skip_vertex_transform, unshaded, cull_disabled;
-
-uniform vec4 albedo : source_color;
-
-void vertex() {
-	POSITION = vec4(VERTEX.x, -VERTEX.y, 0.0, 1.0);
-}
-
-void fragment() {
-	ALBEDO = albedo.rgb;
-	ALPHA = albedo.a;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:feb9917e45d1720bbc3f05dcab87e2fbc50a31e622c2062095360ec0a069dba4
+size 269

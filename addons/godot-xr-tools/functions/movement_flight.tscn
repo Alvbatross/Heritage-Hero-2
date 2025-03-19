@@ -1,6 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://kyhaogt0a4q8"]
-
-[ext_resource type="Script" path="res://addons/godot-xr-tools/functions/movement_flight.gd" id="1"]
-
-[node name="MovementFlight" type="Node" groups=["movement_providers"]]
-script = ExtResource("1")
+version https://git-lfs.github.com/spec/v1
+oid sha256:85dc86526c3c54c4e167168c7bf41464ecd6474d302e910ba8d663a69d6f84bf
+size 257

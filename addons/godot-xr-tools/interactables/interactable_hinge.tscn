@@ -1,6 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://bp4shgu54l44h"]
-
-[ext_resource type="Script" path="res://addons/godot-xr-tools/interactables/interactable_hinge.gd" id="1"]
-
-[node name="InteractableHinge" type="Node3D"]
-script = ExtResource("1")
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c2e02b4ed6293ffb605bf979f7bf88e52bd10d44fcb2dfe55be83236164231e
+size 240
