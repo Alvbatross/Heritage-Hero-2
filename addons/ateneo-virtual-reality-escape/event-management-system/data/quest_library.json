@@ -1,0 +1,19 @@
+{
+	"QuestNavigateHouse": {
+		"QuestDescription": {
+			"Name": "Navigate the House",
+			"Description": "The house of the crony is dark and messy. Find a way to navigate this place."
+		},
+		"QuestCompletionTracker": {
+			"Find Light": [
+				"ActionPickUpFlashlight_Done"
+			],
+			"Walk Around": [
+				"ActionTeleportToSofas_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestNavigateHouse_Done"
+		]
+	}
+}

@@ -1,7 +1,26 @@
 {
-	"EventName": "",
-	"EventCategory": "",
-	"EventPrerequisiteFlags": [],
-	"EventCompletionFlags": [],
-	"Oneshot": false
+	"Parameters": {
+		"EventName": "",
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [],
+		"Oneshot": false
+	},
+	"QuestParameters": {
+		"QuestName": "",
+		"QuestDescription": {
+			"Name": "",
+			"Description": ""
+		},
+		"QuestCompletionTracker": {
+			"": []
+		},
+		"QuestCompletionFlags": []
+	},
+	"Categories": [
+		"DIALOGUE",
+		"ACTION",
+		"TUTORIAL",
+		"BGM"
+	]
 }

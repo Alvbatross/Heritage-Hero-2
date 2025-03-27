@@ -1,0 +1,70 @@
+{
+	"TutorialInventory": {
+		"EventCategory": "TUTORIAL",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"TutorialInventory_Done"
+		],
+		"Oneshot": true
+	},
+	"ActionPickUpJournal": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialInventory_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionPickUpJournal_Done"
+		],
+		"Oneshot": true
+	},
+	"TutorialJournalQuestLog": {
+		"EventCategory": "TUTORIAL",
+		"EventPrerequisiteFlags": [
+			"ActionPickUpJournal_Done"
+		],
+		"EventCompletionFlags": [
+			"TutorialJournalQuestLog_Done"
+		],
+		"Oneshot": true
+	},
+	"ActionPickUpFlashlight": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionPickUpFlashlight_Done"
+		],
+		"Oneshot": true
+	},
+	"TutorialFlashlightRadio": {
+		"EventCategory": "TUTORIAL",
+		"EventPrerequisiteFlags": [
+			"ActionPickUpFlashlight_Done"
+		],
+		"EventCompletionFlags": [
+			"TutorialFlashlightRadio_Done",
+			"TeleportSofasActivate"
+		],
+		"Oneshot": true
+	},
+	"TutorialTeleport": {
+		"EventCategory": "TUTORIAL",
+		"EventPrerequisiteFlags": [
+			"TutorialFlashlightRadio_Done",
+			"TeleportSofasActivate"
+		],
+		"EventCompletionFlags": [
+			"TutorialTeleport_Done"
+		],
+		"Oneshot": true
+	},
+	"ActionTeleportToSofas": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialTeleport_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionTeleportToSofas_Done"
+		],
+		"Oneshot": true
+	}
+}
