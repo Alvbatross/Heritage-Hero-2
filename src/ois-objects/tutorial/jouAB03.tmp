@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://4b0dmchbkdcq"]
+
+[ext_resource type="Script" path="res://src/ois-objects/tutorial/journal_ui.gd" id="1_jshtk"]
+[ext_resource type="Script" path="res://src/ois-objects/tutorial/quest_ui.gd" id="2_eqcug"]
+
+[node name="JournalUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jshtk")
+
+[node name="QuestUI" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_eqcug")
+
+[node name="MarginContainer" type="MarginContainer" parent="QuestUI"]
+custom_minimum_size = Vector2(576, 0)
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 40
+
+[node name="Page1" type="RichTextLabel" parent="QuestUI/MarginContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "Hello World this is the journal\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"
+Hello World this is the journal\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e"
+
+[node name="MarginContainer2" type="MarginContainer" parent="QuestUI"]
+custom_minimum_size = Vector2(576, 0)
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 40
+
+[node name="Page2" type="RichTextLabel" parent="QuestUI/MarginContainer2"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "Hello World this is the journal\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"
+Hello World this is the journal\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e"

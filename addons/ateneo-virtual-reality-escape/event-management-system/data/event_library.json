@@ -15,9 +15,7 @@
 	},
 	"ActionPickUpJournal": {
 		"EventCategory": "ACTION",
-		"EventPrerequisiteFlags": [
-			"TutorialInventory_Done"
-		],
+		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [
 			"ActionPickUpJournal_Done"
 		],
