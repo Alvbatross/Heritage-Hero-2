@@ -7,7 +7,11 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-
+			"Tutorial": [
+				"Press the 'X' Button on the Left Controller",
+				"This Opens the Inventory System",
+				"Pressing the 'X' Button again closes the Inventory"
+			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -37,7 +41,12 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-
+			"Tutorial": [
+				"This is your Journal",
+				"This is the Task List Section of the Journal",
+				"This section contains information about the current task you need to accomplish",
+				"Make sure to check your Journal often to see updates about your task progress"
+			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -68,7 +77,13 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-
+			"Tutorial": [
+				"This is the Flashlight Radio.",
+				"This is useful as a light source when navigating dark areas",
+				"You can also grab on to the crank.",
+				"Cranking the flashlight 3 times will give you a hint about how to progress",
+				"Give it a go!"
+			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -85,7 +100,12 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-
+			"Tutorial": [
+				"The circles on  the ground are movement points.",
+				"Pointing at them and pressing the trigger will move you to the location of the circle",
+				"White Circles are movement points you can access at your current location.",
+				"Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance"
+			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
