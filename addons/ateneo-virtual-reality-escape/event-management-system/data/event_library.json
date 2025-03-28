@@ -5,7 +5,13 @@
 		"EventCompletionFlags": [
 			"TutorialInventory_Done"
 		],
-		"Oneshot": true
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [
+			"Mansion Entrance"
+		]
 	},
 	"ActionPickUpJournal": {
 		"EventCategory": "ACTION",
@@ -15,7 +21,13 @@
 		"EventCompletionFlags": [
 			"ActionPickUpJournal_Done"
 		],
-		"Oneshot": true
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [
+			"Mansion Entrance"
+		]
 	},
 	"TutorialJournalQuestLog": {
 		"EventCategory": "TUTORIAL",
@@ -25,7 +37,13 @@
 		"EventCompletionFlags": [
 			"TutorialJournalQuestLog_Done"
 		],
-		"Oneshot": true
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [
+			"Mansion Entrance"
+		]
 	},
 	"ActionPickUpFlashlight": {
 		"EventCategory": "ACTION",
@@ -33,7 +51,13 @@
 		"EventCompletionFlags": [
 			"ActionPickUpFlashlight_Done"
 		],
-		"Oneshot": true
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [
+			"Mansion Entrance"
+		]
 	},
 	"TutorialFlashlightRadio": {
 		"EventCategory": "TUTORIAL",
@@ -44,7 +68,13 @@
 			"TutorialFlashlightRadio_Done",
 			"TeleportSofasActivate"
 		],
-		"Oneshot": true
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [
+			"Mansion Entrance"
+		]
 	},
 	"TutorialTeleport": {
 		"EventCategory": "TUTORIAL",
@@ -55,7 +85,13 @@
 		"EventCompletionFlags": [
 			"TutorialTeleport_Done"
 		],
-		"Oneshot": true
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [
+			"Mansion Entrance"
+		]
 	},
 	"ActionTeleportToSofas": {
 		"EventCategory": "ACTION",
@@ -65,6 +101,10 @@
 		"EventCompletionFlags": [
 			"ActionTeleportToSofas_Done"
 		],
-		"Oneshot": true
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": []
 	}
 }
