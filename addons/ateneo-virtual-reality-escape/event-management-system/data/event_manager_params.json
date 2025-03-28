@@ -4,7 +4,11 @@
 		"EventCategory": "DIALOGUE",
 		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [],
-		"Oneshot": false
+		"Oneshot": false,
+		"EventText": {
+
+		},
+		"EventLocations": []
 	},
 	"QuestParameters": {
 		"QuestName": "",
