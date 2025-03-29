@@ -15,7 +15,8 @@
 		},
 		"EventLocations": [
 			"Mansion Entrance"
-		]
+		],
+		"DialogueClickable": true
 	},
 	"ActionPickUpJournal": {
 		"EventCategory": "ACTION",
@@ -29,7 +30,8 @@
 		},
 		"EventLocations": [
 			"Mansion Entrance"
-		]
+		],
+		"DialogueClickable": false
 	},
 	"TutorialJournalQuestLog": {
 		"EventCategory": "TUTORIAL",
@@ -50,7 +52,8 @@
 		},
 		"EventLocations": [
 			"Mansion Entrance"
-		]
+		],
+		"DialogueClickable": true
 	},
 	"ActionPickUpFlashlight": {
 		"EventCategory": "ACTION",
@@ -64,7 +67,8 @@
 		},
 		"EventLocations": [
 			"Mansion Entrance"
-		]
+		],
+		"DialogueClickable": false
 	},
 	"TutorialFlashlightRadio": {
 		"EventCategory": "TUTORIAL",
@@ -87,7 +91,8 @@
 		},
 		"EventLocations": [
 			"Mansion Entrance"
-		]
+		],
+		"DialogueClickable": true
 	},
 	"TutorialTeleport": {
 		"EventCategory": "TUTORIAL",
@@ -101,7 +106,7 @@
 		"Oneshot": true,
 		"EventText": {
 			"Tutorial": [
-				"The circles on  the ground are movement points.",
+				"The circles on the ground are movement points.",
 				"Pointing at them and pressing the trigger will move you to the location of the circle",
 				"White Circles are movement points you can access at your current location.",
 				"Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance"
@@ -109,7 +114,8 @@
 		},
 		"EventLocations": [
 			"Mansion Entrance"
-		]
+		],
+		"DialogueClickable": true
 	},
 	"ActionTeleportToSofas": {
 		"EventCategory": "ACTION",
@@ -123,6 +129,7 @@
 		"EventText": {
 
 		},
-		"EventLocations": []
+		"EventLocations": [],
+		"DialogueClickable": false
 	}
 }

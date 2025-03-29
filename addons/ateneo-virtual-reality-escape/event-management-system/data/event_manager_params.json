@@ -8,7 +8,8 @@
 		"EventText": {
 
 		},
-		"EventLocations": []
+		"EventLocations": [],
+		"DialogueClickable": false
 	},
 	"QuestParameters": {
 		"QuestName": "",
