@@ -8,7 +8,7 @@
 		"Oneshot": true,
 		"EventText": {
 			"Tutorial": [
-				"Press the 'X' Button on the Left Controller",
+				"Press the 'X' Button on the Left Controller.",
 				"This Opens the Inventory System",
 				"Pressing the 'X' Button again closes the Inventory"
 			]
