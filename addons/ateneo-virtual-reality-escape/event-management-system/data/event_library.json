@@ -7,11 +7,12 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-			"Tutorial": [
-				"Press the 'X' Button on the Left Controller.",
-				"This Opens the Inventory System",
-				"Pressing the 'X' Button again closes the Inventory"
-			]
+			"Name": "Tutorial",
+			"Text": {
+				"Press the 'X' Button on the Left Controller.": 3,
+				"This Opens the Inventory System": 3,
+				"Pressing the 'X' Button again closes the Inventory": 3
+			}
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -43,12 +44,13 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-			"Tutorial": [
-				"This is your Journal",
-				"This is the Task List Section of the Journal",
-				"This section contains information about the current task you need to accomplish",
-				"Make sure to check your Journal often to see updates about your task progress"
-			]
+			"Name": "Tutorial",
+			"Text": {
+				"This is your Journal": 2,
+				"This is the Task List Section of the Journal": 3,
+				"This section contains information about the current task you need to accomplish": 4,
+				"Make sure to check your Journal often to see updates about your task progress": 4
+			}
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -80,13 +82,14 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-			"Tutorial": [
-				"This is the Flashlight Radio.",
-				"This is useful as a light source when navigating dark areas",
-				"You can also grab on to the crank.",
-				"Cranking the flashlight 3 times will give you a hint about how to progress",
-				"Give it a go!"
-			]
+			"Name": "Tutorial",
+			"Text": {
+				"This is the Flashlight Radio.": 3,
+				"This is useful as a light source when navigating dark areas": 4,
+				"You can also grab on to the crank.": 3,
+				"Cranking the flashlight 3 times will give you a hint about how to progress": 4,
+				"Give it a go!": 2
+			}
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -104,12 +107,13 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-			"Tutorial": [
-				"The circles on the ground are movement points.",
-				"Pointing at them and pressing the trigger will move you to the location of the circle",
-				"White Circles are movement points you can access at your current location.",
-				"Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance"
-			]
+			"Name": "Tutorial",
+			"Text": {
+				"The circles on the ground are movement points.": 4,
+				"Pointing at them and pressing the trigger will move you to the location of the circle": 4,
+				"White Circles are movement points you can access at your current location.": 4,
+				"Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance": 5
+			}
 		},
 		"EventLocations": [
 			"Mansion Entrance"

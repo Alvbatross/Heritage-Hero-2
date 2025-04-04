@@ -9,7 +9,7 @@
 				"ActionPickUpFlashlight_Done"
 			],
 			"Walk Around": [
-				"ActionPickUpFlashlight_Done"
+				"ActionTeleportToSofas_Done"
 			]
 		},
 		"QuestCompletionFlags": [
