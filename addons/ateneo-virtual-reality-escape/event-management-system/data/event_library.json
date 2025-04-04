@@ -76,8 +76,7 @@
 			"ActionPickUpFlashlight_Done"
 		],
 		"EventCompletionFlags": [
-			"TutorialFlashlightRadio_Done",
-			"TeleportSofasActivate"
+			"TutorialFlashlightRadio_Done"
 		],
 		"Oneshot": true,
 		"EventText": {
@@ -97,11 +96,11 @@
 	"TutorialTeleport": {
 		"EventCategory": "TUTORIAL",
 		"EventPrerequisiteFlags": [
-			"TutorialFlashlightRadio_Done",
-			"TeleportSofasActivate"
+			"ActionShineLightOnTele_Done"
 		],
 		"EventCompletionFlags": [
-			"TutorialTeleport_Done"
+			"TutorialTeleport_Done",
+			"TeleportSofasActivate"
 		],
 		"Oneshot": true,
 		"EventText": {
@@ -130,6 +129,23 @@
 
 		},
 		"EventLocations": [],
+		"DialogueClickable": false
+	},
+	"ActionShineLightOnTele": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialFlashlightRadio_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionShineLightOnTele_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [
+			"Mansion Entrance"
+		],
 		"DialogueClickable": false
 	}
 }
