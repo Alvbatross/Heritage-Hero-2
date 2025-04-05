@@ -1,0 +1,477 @@
+[gd_scene load_steps=42 format=3 uid="uid://op3je87derpn"]
+
+[ext_resource type="Script" uid="uid://bqnd6rij2obrt" path="res://src/main.gd" id="1_nlhso"]
+[ext_resource type="PackedScene" uid="uid://d1awap5dxo6hs" path="res://src/xr_player.tscn" id="2_jmn7h"]
+[ext_resource type="PackedScene" uid="uid://dtykay6lg8ao" path="res://src/Level/house_main.tscn" id="3_qkxvc"]
+[ext_resource type="Script" uid="uid://cxy8oxoldmaoc" path="res://addons/ateneo-virtual-reality-escape/teleportation-system/teleporter_manager.gd" id="4_xl8vw"]
+[ext_resource type="Script" uid="uid://ek4xpaefjlux" path="res://addons/ateneo-virtual-reality-escape/teleportation-system/teleporter.gd" id="5_5y1lq"]
+[ext_resource type="PackedScene" uid="uid://bq5vkafh6ugil" path="res://src/ois-objects/tutorial/ois_flashlight_radio.tscn" id="6_3bm4k"]
+[ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://src/ois-objects/tutorial/ois_journal.tscn" id="7_g27y0"]
+[ext_resource type="Texture2D" uid="uid://febxpfbrlrie" path="res://src/Assets/00-general-3d-assets/Flare00.PNG" id="8_ubcls"]
+[ext_resource type="Script" uid="uid://du4lpoac66rw" path="res://addons/ateneo-virtual-reality-escape/inventory-system/inventory_system.gd" id="9_vx6pd"]
+[ext_resource type="Script" uid="uid://d2j64x8gnsuue" path="res://addons/ateneo-virtual-reality-escape/inventory-system/inventory_slot.gd" id="10_vty50"]
+[ext_resource type="PackedScene" uid="uid://ce7vysyvondf8" path="res://addons/godot-xr-tools/objects/snap_zone.tscn" id="11_gns45"]
+[ext_resource type="Material" uid="uid://dy43ogh4jhnpk" path="res://addons/ateneo-virtual-reality-escape/inventory-system/misc-resources/inventory_slot_shader_a.tres" id="12_1o0r6"]
+[ext_resource type="Script" uid="uid://us0ag23goci7" path="res://src/dialogue-system/dialogue_system.gd" id="13_k5s8g"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="14_tapid"]
+[ext_resource type="PackedScene" uid="uid://bpvb7ckslsj3l" path="res://src/dialogue-system/dialogue_ui.tscn" id="15_p3sfu"]
+[ext_resource type="Material" uid="uid://ca8mu8kt7e14f" path="res://src/dialogue-system/draw_on_top_material.tres" id="16_sbu0l"]
+[ext_resource type="Script" uid="uid://p7vbsnbdp2wx" path="res://src/ois-objects/event-scripts/tutorial_event.gd" id="17_sxg64"]
+[ext_resource type="PackedScene" uid="uid://0ssulj5t3857" path="res://src/Assets/01-pickable-assets/daivoltz-0-a4.tscn" id="18_1iy65"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nv63v"]
+sky_top_color = Color(0.681742, 0.304428, 0.0844628, 1)
+sky_horizon_color = Color(0.408218, 0.207104, 0.381513, 1)
+sky_cover_modulate = Color(0.40358, 0.445261, 0.446208, 1)
+ground_bottom_color = Color(0.080669, 0.104145, 0.00873393, 1)
+sun_angle_max = 22.44
+sun_curve = 0.212132
+
+[sub_resource type="Sky" id="Sky_u4drl"]
+sky_material = SubResource("ProceduralSkyMaterial_nv63v")
+
+[sub_resource type="Environment" id="Environment_og8uf"]
+background_mode = 2
+background_energy_multiplier = 1.2
+sky = SubResource("Sky_u4drl")
+ambient_light_source = 3
+ambient_light_color = Color(0.902958, 0.562238, 0.447894, 1)
+ambient_light_sky_contribution = 0.4
+ambient_light_energy = 0.15
+fog_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 1.403
+fog_depth_curve = 0.965937
+fog_depth_begin = 0.0
+fog_depth_end = 30.0
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0, 0, 0, 1)
+volumetric_fog_length = 39.02
+adjustment_enabled = true
+
+[sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_aeo47"]
+
+[sub_resource type="Curve" id="Curve_sjfh2"]
+_data = [Vector2(0, 0.0021441), 0.0, 0.0, 0, 0, Vector2(0.5, 0.754717), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_iycac"]
+curve = SubResource("Curve_sjfh2")
+
+[sub_resource type="Gradient" id="Gradient_kvgra"]
+colors = PackedColorArray(0.703607, 0.543447, 0.489575, 1, 0.98539, 0.469295, 1.92523e-07, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nv5r6"]
+gradient = SubResource("Gradient_kvgra")
+
+[sub_resource type="CurveTexture" id="CurveTexture_6aruc"]
+curve = SubResource("Curve_sjfh2")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_j0kxd"]
+lifetime_randomness = 1.0
+emission_shape_scale = Vector3(1, 1, 2.5)
+emission_shape = 1
+emission_sphere_radius = 1.5
+angle_min = 45.0
+angle_max = 45.0
+gravity = Vector3(0, -0.1, 0)
+scale_max = 2.0
+color_ramp = SubResource("GradientTexture1D_nv5r6")
+alpha_curve = SubResource("CurveTexture_iycac")
+emission_curve = SubResource("CurveTexture_6aruc")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vdy5f"]
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("8_ubcls")
+uv1_scale = Vector3(1.015, 1.01, 13.465)
+
+[sub_resource type="QuadMesh" id="QuadMesh_vysgm"]
+material = SubResource("StandardMaterial3D_vdy5f")
+size = Vector2(0.53, 2.69)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0w6e0"]
+size = Vector3(2.80688, 1, 2.49567)
+
+[sub_resource type="QuadMesh" id="QuadMesh_d8wte"]
+resource_local_to_scene = true
+size = Vector2(3, 2)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_okx7f"]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_okx7f"]
+transparency = 1
+cull_mode = 2
+albedo_texture = SubResource("ViewportTexture_okx7f")
+texture_filter = 1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vu7qk"]
+resource_local_to_scene = true
+size = Vector3(3, 2, 0.02)
+
+[sub_resource type="SphereMesh" id="SphereMesh_fs86a"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_43hyw"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_jqdwh"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_i6bip"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_212gi"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_tbwn0"]
+radius = 0.1
+height = 0.2
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_nlhso")
+
+[node name="XRPlayer" parent="." instance=ExtResource("2_jmn7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.874795, 0)
+
+[node name="XROrigin3D" parent="XRPlayer" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6947, 0, 1.93678)
+
+[node name="XRCamera3D" parent="XRPlayer/XROrigin3D" index="0"]
+far = 100.0
+
+[node name="FunctionPickup" parent="XRPlayer/XROrigin3D/XRController3DLeft" index="1"]
+grab_distance = 0.05
+
+[node name="FunctionPickup" parent="XRPlayer/XROrigin3D/XRController3DRight" index="1"]
+grab_distance = 0.05
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_og8uf")
+camera_attributes = SubResource("CameraAttributesPhysical_aeo47")
+
+[node name="Level" type="Node3D" parent="."]
+
+[node name="House" parent="Level" instance=ExtResource("3_qkxvc")]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -15.7658, 0, -4.70076)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Level"]
+transform = Transform3D(0.886696, -2.9385e-09, 0.462352, -0.462352, -3.33259e-08, 0.886696, 1.28028e-08, -1, -3.09086e-08, 18.271, 3.54941, -2.46197)
+light_color = Color(1, 0.713726, 0.619608, 1)
+light_energy = 11.535
+spot_range = 19.816
+spot_angle = 44.05
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Level"]
+transform = Transform3D(-4.37114e-08, 1, 0, -0.461749, -2.01837e-08, 0.887011, 0.887011, 3.87725e-08, 0.461749, 9.49846, 3.54941, 5.69752)
+light_color = Color(1, 0.713726, 0.619608, 1)
+light_energy = 5.237
+spot_range = 19.816
+spot_angle = 44.05
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="Level"]
+transform = Transform3D(-4.37114e-08, 1, 0, -0.461749, -2.01837e-08, 0.887011, 0.887011, 3.87725e-08, 0.461749, -1.6062, 3.54941, 5.69752)
+light_color = Color(1, 0.713726, 0.619608, 1)
+light_energy = 5.237
+spot_range = 19.816
+spot_angle = 44.05
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Level"]
+transform = Transform3D(0.886696, -2.9385e-09, 0.462352, -0.462352, -3.33259e-08, 0.886696, 1.28028e-08, -1, -3.09086e-08, 18.271, 3.54941, -10.6836)
+light_color = Color(1, 0.713726, 0.619608, 1)
+light_energy = 11.535
+spot_range = 19.816
+spot_angle = 44.05
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.1332, 3.61528, -32.3083)
+light_color = Color(0.941208, 0.67727, 0.46273, 1)
+light_energy = 5.898
+omni_range = 14.3015
+
+[node name="Lights" type="Node3D" parent="Level"]
+visible = false
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Level/Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.35487, 2.89208, -16.1912)
+light_color = Color(0.941208, 0.67727, 0.46273, 1)
+light_energy = 0.813
+omni_range = 6.55353
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Level/Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.04612, 2.89208, -1.29979)
+light_color = Color(0.941208, 0.67727, 0.46273, 1)
+light_energy = 0.813
+omni_range = 6.55353
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Level/Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.982, 4.1063, -27.7266)
+light_color = Color(0.941208, 0.67727, 0.46273, 1)
+light_energy = 0.813
+omni_range = 21.9061
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Level/Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52375, 8.76515, -0.650649)
+light_color = Color(0.941208, 0.67727, 0.46273, 1)
+light_energy = 0.813
+omni_range = 6.55353
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Level/Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52375, 3.25586, -0.650649)
+light_color = Color(0.941208, 0.67727, 0.46273, 1)
+light_energy = 0.813
+omni_range = 13.9708
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Level/Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6027, 2.94091, -4.92511)
+light_color = Color(0.941208, 0.67727, 0.46273, 1)
+light_energy = 0.813
+omni_range = 6.55353
+
+[node name="SFX" type="Node3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.53976, 0, 0)
+
+[node name="WindowGodRay" type="GPUParticles3D" parent="Level/SFX"]
+transform = Transform3D(0.436425, 0.899741, 0, -0.899741, 0.436425, 0, 0, 0, 1, 11.2474, 2.81458, -11.4522)
+amount = 100
+lifetime = 5.0
+preprocess = 1.0
+randomness = 1.0
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_j0kxd")
+draw_pass_1 = SubResource("QuadMesh_vysgm")
+
+[node name="WindowGodRay2" type="GPUParticles3D" parent="Level/SFX"]
+transform = Transform3D(0.436425, 0.899741, 0, -0.899741, 0.436425, 0, 0, 0, 1, 11.2474, 2.53361, -2.20848)
+amount = 100
+lifetime = 5.0
+preprocess = 1.0
+randomness = 1.0
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_j0kxd")
+draw_pass_1 = SubResource("QuadMesh_vysgm")
+
+[node name="Collisions" type="Node3D" parent="Level"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Level/Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.69144, 0.430897, -5.53697)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Collisions/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370728, 0, 0.20639)
+shape = SubResource("BoxShape3D_0w6e0")
+
+[node name="TeleporterManager" type="Node3D" parent="." node_paths=PackedStringArray("current_location", "xr_origin", "xr_camera", "xr_left_function_pointer", "xr_right_function_pointer", "world_environment")]
+script = ExtResource("4_xl8vw")
+current_location = NodePath("Mansion Entrance")
+xr_origin = NodePath("../XRPlayer/XROrigin3D")
+xr_camera = NodePath("../XRPlayer/XROrigin3D/XRCamera3D")
+xr_left_function_pointer = NodePath("../XRPlayer/XROrigin3D/XRController3DLeft/FunctionPointer")
+xr_right_function_pointer = NodePath("../XRPlayer/XROrigin3D/XRController3DRight/FunctionPointer")
+world_environment = NodePath("../WorldEnvironment")
+
+[node name="Mansion Entrance" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6947, 0, 1.93678)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Mansion Entrance"
+teleporter_position = Vector3(4.6947, 0, 1.93678)
+connected_teleporters = [NodePath("../Sofas"), NodePath("../Living Room")]
+
+[node name="Sofas" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.04789, 0.0816803, -5.07406)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Sofas"
+teleporter_enabled = true
+teleporter_position = Vector3(7.04789, 0.0816803, -5.07406)
+connected_teleporters = [NodePath("../Mansion Entrance"), NodePath("../Living Room 3")]
+
+[node name="Living Room" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0967419, 0.0816803, -4.69518)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Living Room"
+teleporter_enabled = true
+teleporter_position = Vector3(0.0967419, 0.0816803, -4.69518)
+connected_teleporters = [NodePath("../Living Room Shelves"), NodePath("../Mansion Entrance"), NodePath("../Hallway"), NodePath("../Living Room 3")]
+
+[node name="Living Room Near Painting" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.905511, 0.0816803, -19.3126)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Living Room Near Painting"
+teleporter_position = Vector3(-0.905511, 0.0816803, -19.3126)
+connected_teleporters = [NodePath("../Living Room To Kitchen"), NodePath("../Living Room Shelves"), NodePath("../Living Room 3")]
+
+[node name="Living Room To Kitchen" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8831, 0.0816803, -18.2801)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Living Room To Kitchen"
+teleporter_position = Vector3(4.8831, 0.0816803, -18.2801)
+connected_teleporters = [NodePath("../Living Room Near Painting"), NodePath("../Living Room 3"), NodePath("../Near Lampshade")]
+
+[node name="Living Room 3" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19895, 0.0816803, -11.207)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Living Room 3"
+teleporter_position = Vector3(2.19895, 0.0816803, -11.207)
+connected_teleporters = [NodePath("../Sofas"), NodePath("../Living Room"), NodePath("../Living Room Shelves"), NodePath("../Living Room Near Painting"), NodePath("../Living Room To Kitchen")]
+
+[node name="Hallway" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.00541045, 0, 0.999985, 0, 1, 0, -0.999985, 0, -0.00541045, -8.13124, 0.0816803, -5.07406)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Hallway"
+teleporter_position = Vector3(-8.13124, 0.0816803, -5.07406)
+teleporter_rotation = Vector3(0, 90.31, 0)
+connected_teleporters = [NodePath("../Living Room"), NodePath("../Hallway 2")]
+
+[node name="Hallway 2" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.00541045, 0, 0.999985, 0, 1, 0, -0.999985, 0, -0.00541045, -13.7605, 0.0816803, -5.07406)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Hallway 2"
+teleporter_position = Vector3(-13.7605, 0.0816803, -5.07406)
+teleporter_rotation = Vector3(0, 90.31, 0)
+connected_teleporters = [NodePath("../Hallway"), NodePath("../Bedroom Entrance"), NodePath("../Study Room Entrance")]
+
+[node name="Study Room Planks Area" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(1, 0, 0.00012219, 0, 1, 0, -0.00012219, 0, 1, -19.9668, 0.0816803, -2.40756)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Study Room Planks Area"
+teleporter_position = Vector3(-19.9668, 0.0816803, -2.40756)
+teleporter_rotation = Vector3(0, 0.00700097, 0)
+connected_teleporters = [NodePath("../Study Room Entrance"), NodePath("../Study Room")]
+
+[node name="Study Room Entrance" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.920279, 0, 0.391261, 0, 1, 0, -0.391261, 0, -0.920279, -14.8936, 0.0816803, -3.07872)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Study Room Entrance"
+teleporter_position = Vector3(-14.8936, 0.0816803, -3.07872)
+teleporter_rotation = Vector3(0, 156.967, 0)
+connected_teleporters = [NodePath("../Hallway 2"), NodePath("../Study Room Planks Area"), NodePath("../Study Room")]
+
+[node name="Study Room" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.808144, 0, -0.588984, 0, 1, 0, 0.588984, 0, -0.808144, -16.7688, 0.0816803, 0.0394323)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Study Room"
+teleporter_position = Vector3(-16.7688, 0.0816803, 0.0394323)
+teleporter_rotation = Vector3(0, -143.915, 0)
+connected_teleporters = [NodePath("../Study Room Planks Area"), NodePath("../Study Room Entrance")]
+
+[node name="Bedroom Entrance" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(0.999857, 0, 0.0169114, 0, 1, 0, -0.0169114, 0, 0.999857, -10.4299, 0.0816803, -7.85116)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Bedroom Entrance"
+teleporter_position = Vector3(-10.4299, 0.0816803, -7.85116)
+teleporter_rotation = Vector3(0, 0.968998, 0)
+connected_teleporters = [NodePath("../Hallway 2")]
+
+[node name="Living Room Shelves" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.61056, 0.0816803, -11.0843)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Living Room Shelves"
+teleporter_position = Vector3(-3.61056, 0.0816803, -11.0843)
+connected_teleporters = [NodePath("../Living Room"), NodePath("../Living Room Near Painting"), NodePath("../Living Room 3")]
+
+[node name="Dining Room Entrance" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.000418826, 0, 1, 0, 1, 0, -1, 0, -0.000418826, 3.4525, 0.0816803, -30.1014)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Dining Room Entrance"
+teleporter_position = Vector3(3.4525, 0.0816803, -30.1014)
+teleporter_rotation = Vector3(0, 90.024, 0)
+connected_teleporters = [NodePath("../Near Lampshade")]
+
+[node name="Storage Room Inside" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.999836, 0, -0.0180981, 0, 1, 0, 0.0180981, 0, -0.999836, 22.3816, 0.0816803, -20.0871)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Storage Room Inside"
+teleporter_position = Vector3(22.3816, 0.0816803, -20.0871)
+teleporter_rotation = Vector3(0, -178.963, 0)
+connected_teleporters = [NodePath("../Storage Room Entrance"), NodePath("../Storage Room Inside2")]
+
+[node name="Storage Room Inside2" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.999836, 0, -0.0180981, 0, 1, 0, 0.0180981, 0, -0.999836, 17.5231, 0.0816803, -20.0871)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Storage Room Inside2"
+teleporter_position = Vector3(17.5231, 0.0816803, -20.0871)
+teleporter_rotation = Vector3(0, -178.963, 0)
+connected_teleporters = [NodePath("../Storage Room Entrance")]
+
+[node name="Storage Room Entrance" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.99849, 0, -0.0549328, 0, 1, 0, 0.0549328, 0, -0.99849, 23.8961, 0.0816803, -22.2038)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Storage Room Entrance"
+teleporter_position = Vector3(23.8961, 0.0816803, -22.2038)
+teleporter_rotation = Vector3(0, -176.851, 0)
+connected_teleporters = [NodePath("../Kitchen Area Entrance"), NodePath("../Storage Room Inside")]
+
+[node name="Kitchen Part 1" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(0.0121297, 0, 0.999926, 0, 1, 0, -0.999926, 0, 0.0121297, 23.331, 0.0816803, -29.8134)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Kitchen Part 1"
+teleporter_position = Vector3(23.331, 0.0816803, -29.8134)
+teleporter_rotation = Vector3(0, 89.305, 0)
+connected_teleporters = [NodePath("../Kitchen Stove"), NodePath("../Kitchen Further Entrance")]
+
+[node name="Kitchen Outside Counter" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.00795864, 0, 0.999968, 0, 1, 0, -0.999968, 0, -0.00795864, 21.8513, 0.0816803, -37.2745)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Kitchen Outside Counter"
+teleporter_position = Vector3(21.8513, 0.0816803, -37.2745)
+teleporter_rotation = Vector3(0, 90.456, 0)
+connected_teleporters = [NodePath("../Kitchen Cabinets")]
+
+[node name="Kitchen Further Entrance" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(0.999996, 0, -0.00282737, 0, 1, 0, 0.00282737, 0, 0.999996, 23.8961, 0.0816803, -25.0262)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Kitchen Further Entrance"
+teleporter_position = Vector3(23.8961, 0.0816803, -25.0262)
+teleporter_rotation = Vector3(0, -0.161997, 0)
+connected_teleporters = [NodePath("../Kitchen Part 1"), NodePath("../Kitchen Outside Counter 3"), NodePath("../Kitchen Area Entrance")]
+
+[node name="Kitchen Outside Counter 3" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.00795864, 0, 0.999968, 0, 1, 0, -0.999968, 0, -0.00795864, 21.0887, 0.0816803, -29.8105)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Kitchen Outside Counter 3"
+teleporter_position = Vector3(21.0887, 0.0816803, -29.8105)
+teleporter_rotation = Vector3(0, 90.456, 0)
+connected_teleporters = [NodePath("../Kitchen Further Entrance")]
+
+[node name="Kitchen Cabinets" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(0.999916, 0, 0.0130024, 0, 1, 0, -0.0130024, 0, 0.999916, 24.7869, 0.0816803, -31.3468)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Kitchen Cabinets"
+teleporter_position = Vector3(24.7869, 0.0816803, -31.3468)
+teleporter_rotation = Vector3(0, 0.745003, 0)
+connected_teleporters = [NodePath("../Kitchen Outside Counter"), NodePath("../Kitchen Stove")]
+
+[node name="Kitchen Stove" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(-0.019145, 0, -0.999817, 0, 1, 0, 0.999817, 0, -0.019145, 24.2965, 0.0816803, -33.7269)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Kitchen Stove"
+teleporter_position = Vector3(24.2965, 0.0816803, -33.7269)
+teleporter_rotation = Vector3(0, -91.097, 0)
+connected_teleporters = [NodePath("../Kitchen Cabinets"), NodePath("../Kitchen Part 1")]
+
+[node name="Kitchen Area Entrance" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(0.00708602, 0, -0.999975, 0, 1, 0, 0.999975, 0, 0.00708602, 14.5667, 0.0816803, -25.1651)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Kitchen Area Entrance"
+teleporter_position = Vector3(14.5667, 0.0816803, -25.1651)
+teleporter_rotation = Vector3(0, -89.594, 0)
+connected_teleporters = [NodePath("../Storage Room Entrance"), NodePath("../Kitchen Further Entrance"), NodePath("../Path To Kitchen")]
+
+[node name="Path To Kitchen" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(0.00708602, 0, -0.999975, 0, 1, 0, 0.999975, 0, 0.00708602, 8.55089, 0.0816803, -30.1)
+script = ExtResource("5_5y1lq")
+teleporter_name = "Path To Kitchen"
+teleporter_position = Vector3(8.55089, 0.0816803, -30.1)
+teleporter_rotation = Vector3(0, -89.594, 0)
+connected_teleporters = [NodePath("../Kitchen Area Entrance"), NodePath("../Near Lampshade")]
+
+[node name="Near Lampshade" type="Node3D" parent="TeleporterManager" node_paths=PackedStringArray("connected_teleporters")]
+transform = Transform3D(1, 0,
