@@ -9,9 +9,9 @@
 		"EventText": {
 			"Name": "Tutorial",
 			"Text": {
-				"Press the 'X' Button on the Left Controller.": 3,
-				"This Opens the Inventory System": 3,
-				"Pressing the 'X' Button again closes the Inventory": 3
+				"Press the 'X' button on the Left Controller.": 4.0,
+				"This opens the inventory system.": 4.0,
+				"Pressing the 'X' button again closes the inventory.": 4.0
 			}
 		},
 		"EventLocations": [
@@ -46,10 +46,10 @@
 		"EventText": {
 			"Name": "Tutorial",
 			"Text": {
-				"This is your Journal": 2,
-				"This is the Task List Section of the Journal": 3,
-				"This section contains information about the current task you need to accomplish": 4,
-				"Make sure to check your Journal often to see updates about your task progress": 4
+				"This is your Journal.": 3.0,
+				"This is the Task List Section of the Journal.": 5.0,
+				"This section contains information about the current task you need to accomplish.": 5.0,
+				"Make sure to check your Journal often to see updates about your task progress.": 5.0
 			}
 		},
 		"EventLocations": [
@@ -84,11 +84,11 @@
 		"EventText": {
 			"Name": "Tutorial",
 			"Text": {
-				"This is the Flashlight Radio.": 3,
-				"This is useful as a light source when navigating dark areas": 4,
-				"You can also grab on to the crank.": 3,
-				"Cranking the flashlight 3 times will give you a hint about how to progress": 4,
-				"Give it a go!": 2
+				"This is the Flashlight Radio.": 3.0,
+				"This is useful as a light source when navigating dark areas.": 5.0,
+				"You can also grab on to the crank.": 5.0,
+				"Cranking the flashlight 3 times will give you a hint about how to progress": 5.0,
+				"Give it a go!": 3.0
 			}
 		},
 		"EventLocations": [
@@ -109,10 +109,10 @@
 		"EventText": {
 			"Name": "Tutorial",
 			"Text": {
-				"The circles on the ground are movement points.": 4,
-				"Pointing at them and pressing the trigger will move you to the location of the circle": 4,
-				"White Circles are movement points you can access at your current location.": 4,
-				"Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance": 5
+				"The circles on the ground are movement points.": 4.0,
+				"Pointing at them and pressing the trigger will move you to the location of the circle.": 5.0,
+				"White Circles are movement points you can access at your current location.": 4.0,
+				"Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance.": 6.0
 			}
 		},
 		"EventLocations": [
