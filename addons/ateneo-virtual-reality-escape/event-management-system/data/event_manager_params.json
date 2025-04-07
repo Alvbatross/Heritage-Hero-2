@@ -9,7 +9,8 @@
 
 		},
 		"EventLocations": [],
-		"DialogueClickable": false
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
 	},
 	"QuestParameters": {
 		"QuestName": "",
@@ -26,6 +27,8 @@
 		"DIALOGUE",
 		"ACTION",
 		"TUTORIAL",
-		"BGM"
+		"BGM",
+		"RADIO",
+		"KEYITEM"
 	]
 }
