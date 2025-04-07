@@ -10,8 +10,8 @@
 			"Name": "Tutorial",
 			"Text": {
 				"Press the 'X' button on the Left Controller.": 4.0,
-				"This opens the inventory system.": 4.0,
-				"Pressing the 'X' button again closes the inventory.": 4.0
+				"This opens the inventory system.": 15.0,
+				"Pressing the 'X' button again closes the inventory.": 5.0
 			}
 		},
 		"EventLocations": [
