@@ -10,7 +10,7 @@
 			"Name": "Tutorial",
 			"Text": {
 				"Press the 'X' button on the Left Controller.": 4.0,
-				"This opens the inventory system.": 15.0,
+				"This opens the inventory system.": 5.0,
 				"Pressing the 'X' button again closes the inventory.": 5.0
 			}
 		},
@@ -187,6 +187,203 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlAddWheatFlour": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionBowlAddWheatFlour_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlAddYeast": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlAddWheatFlour_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlAddYeast_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlAddSugar": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlAddYeast_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlAddSugar_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlAddWater": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlMix1_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlAddWater_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlAddOil": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlMix2_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlAddOil_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlAddMilk": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlMix3_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlAddMilk_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlAddSalt": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlAddMilk_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlAddSalt_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlMix1": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlAddSugar_Done",
+			"ActionBowlAddWheatFlour_Done",
+			"ActionBowlAddYeast_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlMix1_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlMix2": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlAddWater_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlMix2_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlMix3": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlAddOil_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlMix3_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionBowlMix4": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionBowlAddSalt_Done",
+			"ActionBowlAddMilk_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionBowlMix4_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionStartCookingQuest": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialInventory_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionStartCookingQuest_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+			"Name": "Nutribun Baking Section",
+			"Text": {
+				"Hello there, let's try preparing the dough for the nutribun.": 7.0,
+				"Please note that this is still a work in progress.": 7.0
+			}
+		},
+		"EventLocations": [],
+		"DialogueClickable": true,
 		"AudioSourceFile": ""
 	}
 }
