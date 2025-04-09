@@ -22,7 +22,39 @@
 			"Description": "It seems that you need to make one of these Nutribuns. Maybe there's something you can find out if you do."
 		},
 		"QuestCompletionTracker": {
-			"": []
+			"Add Wheat Flour": [
+				"ActionBowlAddWheatFlour_Done"
+			],
+			"Add Yeast": [
+				"ActionBowlAddYeast_Done"
+			],
+			"Add Sugar": [
+				"ActionBowlAddSugar_Done"
+			],
+			"Mix the 3 ingredients": [
+				"ActionBowlMix1_Done"
+			],
+			"Add water": [
+				"ActionBowlAddWater_Done"
+			],
+			"Mix again": [
+				"ActionBowlMix2_Done"
+			],
+			"Add vegetable oil": [
+				"ActionBowlAddOil_Done"
+			],
+			"Mix one more time": [
+				"ActionBowlMix3_Done"
+			],
+			"Add powdered milk": [
+				"ActionBowlAddMilk_Done"
+			],
+			"Add iodized salt": [
+				"ActionBowlAddSalt_Done"
+			],
+			"Mix for the last time": [
+				"ActionBowlMix4_Done"
+			]
 		},
 		"QuestCompletionFlags": [
 			"QuestMakeNutribun_Done"
