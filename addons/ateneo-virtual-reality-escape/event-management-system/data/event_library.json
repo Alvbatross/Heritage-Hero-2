@@ -103,7 +103,9 @@
 	},
 	"TutorialTeleport": {
 		"EventCategory": "TUTORIAL",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"RadioTutorialBroadcast_Done"
+		],
 		"EventCompletionFlags": [
 			"TutorialTeleport_Done",
 			"TeleportSofasActivate"
@@ -172,5 +174,19 @@
 		"EventLocations": [],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/assets/audio/key-items/DaiVoltZ-V2-AlvaroVersion.mp3"
+	},
+	"TutorialKeyItems": {
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"TutorialKeyItems_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
 	}
 }
