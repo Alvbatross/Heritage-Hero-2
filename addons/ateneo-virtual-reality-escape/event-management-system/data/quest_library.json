@@ -15,5 +15,17 @@
 		"QuestCompletionFlags": [
 			"QuestNavigateHouse_Done"
 		]
+	},
+	"QuestMakeNutribun": {
+		"QuestDescription": {
+			"Name": "Make a Nutribun",
+			"Description": "It seems that you need to make one of these Nutribuns. Maybe there's something you can find out if you do."
+		},
+		"QuestCompletionTracker": {
+			"": []
+		},
+		"QuestCompletionFlags": [
+			"QuestMakeNutribun_Done"
+		]
 	}
 }
