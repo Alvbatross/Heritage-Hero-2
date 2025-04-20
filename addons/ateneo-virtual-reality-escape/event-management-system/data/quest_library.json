@@ -59,5 +59,17 @@
 		"QuestCompletionFlags": [
 			"QuestMakeNutribun_Done"
 		]
+	},
+	"QuestContinueMakeNutribun": {
+		"QuestDescription": {
+			"Name": "Continue the baking process",
+			"Description": "You're almost done with the baking process. Keep going!"
+		},
+		"QuestCompletionTracker": {
+			"": []
+		},
+		"QuestCompletionFlags": [
+			"QuestContinueMakeNutribun_Done"
+		]
 	}
 }
