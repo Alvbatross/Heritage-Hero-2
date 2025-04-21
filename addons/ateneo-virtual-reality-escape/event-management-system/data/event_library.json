@@ -159,7 +159,7 @@
 			"Mansion Entrance"
 		],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/assets/audio/radio-broadcasts/RadioDialogue0-AlvaroVersion.mp3"
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_hosts_TUTORIAL_AnotherBreakthrough.ogg"
 	},
 	"KeyItemDaiVoltZ": {
 		"EventCategory": "KEYITEM",
@@ -173,20 +173,25 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/assets/audio/key-items/DaiVoltZ-V2-AlvaroVersion.mp3"
+		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_01_APopJap.ogg"
 	},
 	"TutorialKeyItems": {
 		"EventCategory": "DIALOGUE",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionTeleportToSofas_Done"
+		],
 		"EventCompletionFlags": [
 			"TutorialKeyItems_Done"
 		],
 		"Oneshot": true,
 		"EventText": {
-
+			"Name": "Tutorial",
+			"Text": {
+				"The picture on the table is called a Key Item": 3.0
+			}
 		},
 		"EventLocations": [],
-		"DialogueClickable": false,
+		"DialogueClickable": true,
 		"AudioSourceFile": ""
 	},
 	"ActionBowlAddWheatFlour": {
@@ -407,6 +412,90 @@
 			"ActionOvenNutribun_Done"
 		],
 		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"KeyItemMalakasMaganda": {
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"KeyItemMalakasMaganda_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"KeyItemNutribun": {
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"KeyItemNutribun_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"KeyItemRolexWatch": {
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"KeyItemRolexWatch_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"KeyItemGiraffe": {
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"KeyItemGiraffe_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"KeyItemButbutCloth": {
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"KeyItemButbutCloth_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"KeyItemManilaFilmCenter": {
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"KeyItemManilaFilmCenter_Done"
+		],
+		"Oneshot": false,
 		"EventText": {
 
 		},
