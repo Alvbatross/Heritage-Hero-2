@@ -502,5 +502,53 @@
 		"EventLocations": [],
 		"DialogueClickable": false,
 		"AudioSourceFile": ""
+	},
+	"ActionPackageNutribun": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionPackageNutribun_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionPlaceDoughOnTray": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionPlaceDoughOnTray_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"RadioNutribunStart": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [
+			"ActionStartCookingQuest_Done"
+		],
+		"EventCompletionFlags": [
+			"RadioNutribunStart_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Presenter",
+			"Text": {
+				"Good Morning Manila! We have our special guest, Chef Bunjamin, here to teach us how to make you own homemade pandesal.": 9.0,
+				"So, Chef Bunjamin, how do we start?": 3.0
+			}
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_01_NeededIng_GoodMorningManila.ogg"
 	}
 }
