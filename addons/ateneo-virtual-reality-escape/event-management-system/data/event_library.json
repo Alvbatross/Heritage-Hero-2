@@ -393,7 +393,9 @@
 	},
 	"ActionKneadDough": {
 		"EventCategory": "ACTION",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionBowlMix4_Done"
+		],
 		"EventCompletionFlags": [
 			"ActionKneadDough_Done"
 		],
@@ -407,7 +409,9 @@
 	},
 	"ActionOvenNutribun": {
 		"EventCategory": "ACTION",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionPlaceDoughOnTray_Done"
+		],
 		"EventCompletionFlags": [
 			"ActionOvenNutribun_Done"
 		],
@@ -505,7 +509,9 @@
 	},
 	"ActionPackageNutribun": {
 		"EventCategory": "ACTION",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionOvenNutribun_Done"
+		],
 		"EventCompletionFlags": [
 			"ActionPackageNutribun_Done"
 		],
@@ -519,7 +525,9 @@
 	},
 	"ActionPlaceDoughOnTray": {
 		"EventCategory": "ACTION",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionDoughDivide_Done"
+		],
 		"EventCompletionFlags": [
 			"ActionPlaceDoughOnTray_Done"
 		],
@@ -550,5 +558,21 @@
 		"EventLocations": [],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_01_NeededIng_GoodMorningManila.ogg"
+	},
+	"ActionDoughDivide": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionKneadDough_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionDoughDivide_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
 	}
 }

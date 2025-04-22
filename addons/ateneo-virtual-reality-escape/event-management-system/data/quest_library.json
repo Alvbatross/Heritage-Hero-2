@@ -66,7 +66,21 @@
 			"Description": "You're almost done with the baking process. Keep going!"
 		},
 		"QuestCompletionTracker": {
-			"": []
+			"Knead the Dough": [
+				"ActionKneadDough_Done"
+			],
+			"Divide the Dough into 4 parts": [
+				"ActionDoughDivide_Done"
+			],
+			"Put pieces of dough in tray": [
+				"ActionPlaceDoughOnTray_Done"
+			],
+			"Bake the dough": [
+				"ActionOvenNutribun_Done"
+			],
+			"Put nutribun in packaging": [
+				"ActionPackageNutribun_Done"
+			]
 		},
 		"QuestCompletionFlags": [
 			"QuestContinueMakeNutribun_Done"
