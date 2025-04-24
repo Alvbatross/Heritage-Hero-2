@@ -8,11 +8,23 @@
 		"Oneshot": true,
 		"EventText": {
 			"Name": "Tutorial",
-			"Text": {
-				"Press the 'X' button on the Left Controller.": 4.0,
-				"This opens the inventory system.": 5.0,
-				"Pressing the 'X' button again closes the inventory.": 5.0
-			}
+			"Text": [
+				{
+					"Character": "Tutorial",
+					"Line": "Press the 'X' button on the Left Controller.",
+					"Time": 3.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "This opens the inventory system.",
+					"Time": 3.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Pressing the 'X' button again closes the inventory.",
+					"Time": 3.0
+				}
+			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -47,12 +59,28 @@
 		"Oneshot": true,
 		"EventText": {
 			"Name": "Tutorial",
-			"Text": {
-				"This is your Journal.": 3.0,
-				"This is the Task List Section of the Journal.": 5.0,
-				"This section contains information about the current task you need to accomplish.": 5.0,
-				"Make sure to check your Journal often to see updates about your task progress.": 5.0
-			}
+			"Text": [
+				{
+					"Character": "Tutorial",
+					"Line": "This is your Journal.",
+					"Time": 3.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "This is the Task List Section of the Journal.",
+					"Time": 4.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "This section contains information about the current task you need to accomplish.",
+					"Time": 5.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Make sure to check your Journal often to see updates about your task progress.",
+					"Time": 5.0
+				}
+			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -87,13 +115,33 @@
 		"Oneshot": true,
 		"EventText": {
 			"Name": "Tutorial",
-			"Text": {
-				"This is the Flashlight Radio.": 3.0,
-				"This is useful as a light source when navigating dark areas.": 5.0,
-				"You can also grab on to the crank.": 5.0,
-				"Cranking the flashlight 3 times will give you a hint about how to progress": 5.0,
-				"Give it a go!": 3.0
-			}
+			"Text": [
+				{
+					"Character": "Tutorial",
+					"Line": "This is the Flashlight Radio.",
+					"Time": 3.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "This is useful as a light source when navigating dark areas.",
+					"Time": 5.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "You can also grab on to the crank.",
+					"Time": 3.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Cranking the flashlight 3 times will give you a hint about how to progress",
+					"Time": 5.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Give it a go!",
+					"Time": 2.0
+				}
+			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -113,12 +161,28 @@
 		"Oneshot": true,
 		"EventText": {
 			"Name": "Tutorial",
-			"Text": {
-				"The circles on the ground are movement points.": 4.0,
-				"Pointing at them and pressing the trigger will move you to the location of the circle.": 5.0,
-				"White Circles are movement points you can access at your current location.": 4.0,
-				"Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance.": 6.0
-			}
+			"Text": [
+				{
+					"Character": "Tutorial",
+					"Line": "The circles on the ground are movement points.",
+					"Time": 4.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Pointing at them and pressing the trigger will move you to the location of the circle.",
+					"Time": 5.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "White Circles are movement points you can access at your current location.",
+					"Time": 4.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance.",
+					"Time": 5.0
+				}
+			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -173,10 +237,10 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_01_APopJap.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_01_v2_SevPopJap.ogg"
 	},
 	"TutorialKeyItems": {
-		"EventCategory": "DIALOGUE",
+		"EventCategory": "TUTORIAL",
 		"EventPrerequisiteFlags": [
 			"ActionTeleportToSofas_Done"
 		],
@@ -186,9 +250,38 @@
 		"Oneshot": true,
 		"EventText": {
 			"Name": "Tutorial",
-			"Text": {
-				"The picture on the table is called a Key Item": 3.0
-			}
+			"Text": [
+				{
+					"Character": "Tutorial",
+					"Line": "In your journal, you will find a section that has newspaper headlines relating to real world events.",
+					"Time": 5.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Throughout the game you will find objects related to these headlines.",
+					"Time": 5.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "The picture on the living room table is one such object",
+					"Time": 4.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Near these objects are cassette tapes.",
+					"Time": 3.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "These cassette tapes can be played by putting them in a cassette player and pointing at the cassette player and pressing the trigger.",
+					"Time": 5.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "These cassettes will give you information about the objects related to the headlines.",
+					"Time": 5.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": true,
