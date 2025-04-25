@@ -475,10 +475,18 @@
 		"Oneshot": true,
 		"EventText": {
 			"Name": "Nutribun Baking Section",
-			"Text": {
-				"Hello there, let's try preparing the dough for the nutribun.": 7.0,
-				"Please note that this is still a work in progress.": 7.0
-			}
+			"Text": [
+				{
+					"Character": "Nutribun Baking Section",
+					"Line": "Hello there, let's try preparing the dough for the nutribun.",
+					"Time": 7.0
+				},
+				{
+					"Character": "Nutribun Baking Section",
+					"Line": "Please note that this is still a work in progress.",
+					"Time": 7.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": true,
@@ -642,11 +650,34 @@
 		],
 		"Oneshot": false,
 		"EventText": {
-			"Name": "Presenter",
-			"Text": {
-				"Good Morning Manila! We have our special guest, Chef Bunjamin, here to teach us how to make you own homemade pandesal.": 9.0,
-				"So, Chef Bunjamin, how do we start?": 3.0
-			}
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "Presenter",
+					"Line": "Good Morning Manila! We have our special guest, Chef Bunjamin, here to teach us how to make you own homemade pandesal.",
+					"Time": 9.0
+				},
+				{
+					"Character": "Presenter",
+					"Line": "So, Chef Bunjamin, how do we start?",
+					"Time": 3.0
+				},
+				{
+					"Character": "Chef Bunjamin",
+					"Line": "You will need the following ingredients: wheat flour, sugar, vegetable oil, salt, and yeast.",
+					"Time": 9.0
+				},
+				{
+					"Character": "Chef Bunjamin",
+					"Line": "All these ingredients can be found around your house, be sure to collect everything that you need first so that it will be easy for you to work with.",
+					"Time": 11.0
+				},
+				{
+					"Character": "Presenter",
+					"Line": "Wow, I think I DO have all these ingredients at home.",
+					"Time": 3.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
