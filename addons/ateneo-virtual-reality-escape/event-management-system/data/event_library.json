@@ -63,22 +63,22 @@
 				{
 					"Character": "Tutorial",
 					"Line": "This is your Journal.",
-					"Time": 3.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "This is the Task List Section of the Journal.",
-					"Time": 4.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "This section contains information about the current task you need to accomplish.",
-					"Time": 5.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "Make sure to check your Journal often to see updates about your task progress.",
-					"Time": 5.0
+					"Time": 2.0
 				}
 			]
 		},
@@ -119,27 +119,27 @@
 				{
 					"Character": "Tutorial",
 					"Line": "This is the Flashlight Radio.",
-					"Time": 3.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "This is useful as a light source when navigating dark areas.",
-					"Time": 5.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "You can also grab on to the crank.",
-					"Time": 3.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "Cranking the flashlight 3 times will give you a hint about how to progress",
-					"Time": 5.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "Give it a go!",
-					"Time": 2.0
+					"Time": 1.0
 				}
 			]
 		},
@@ -165,22 +165,22 @@
 				{
 					"Character": "Tutorial",
 					"Line": "The circles on the ground are movement points.",
-					"Time": 4.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "Pointing at them and pressing the trigger will move you to the location of the circle.",
-					"Time": 5.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "White Circles are movement points you can access at your current location.",
-					"Time": 4.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance.",
-					"Time": 5.0
+					"Time": 2.0
 				}
 			]
 		},
@@ -217,7 +217,19 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "Host 1",
+					"Line": "Another breakthrough for democracy the following year: Martial Law was finally lifted!",
+					"Time": 5.0
+				},
+				{
+					"Character": "Host 2",
+					"Line": "Yes, democracy was restored. The government had to create a blueprint for a democratic Philippines!",
+					"Time": 8.0
+				}
+			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
@@ -233,7 +245,29 @@
 		],
 		"Oneshot": false,
 		"EventText": {
-
+			"Name": "Key Item",
+			"Text": [
+				{
+					"Character": "DaiVoltz Cassette Tape",
+					"Line": "Several popular Japanese animated series became an unexpected symbols of resistance when the government banned their airing in 1979.",
+					"Time": 10.0
+				},
+				{
+					"Character": "DaiVoltz Cassette Tape",
+					"Line": "Officially censored due to their violence and alleged harmful effects on children, these anime portrayed heroic individuals or groups fighting against powerful, tyrannical enemies.",
+					"Time": 11.5
+				},
+				{
+					"Character": "DaiVoltz Cassette Tape",
+					"Line": "The Marcos regime used and regulated media, including television, to shape public opinion.",
+					"Time": 6.5
+				},
+				{
+					"Character": "DaiVoltz Cassette Tape",
+					"Line": "It tightly controlled freedom of speech, using censorship to stifle critical voices and suppress dissent.",
+					"Time": 6.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
@@ -254,32 +288,32 @@
 				{
 					"Character": "Tutorial",
 					"Line": "In your journal, you will find a section that has newspaper headlines relating to real world events.",
-					"Time": 5.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "Throughout the game you will find objects related to these headlines.",
-					"Time": 5.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "The picture on the living room table is one such object",
-					"Time": 4.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "Near these objects are cassette tapes.",
-					"Time": 3.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "These cassette tapes can be played by putting them in a cassette player and pointing at the cassette player and pressing the trigger.",
-					"Time": 5.0
+					"Time": 2.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "These cassettes will give you information about the objects related to the headlines.",
-					"Time": 5.0
+					"Time": 2.0
 				}
 			]
 		},
@@ -467,7 +501,8 @@
 	"ActionStartCookingQuest": {
 		"EventCategory": "ACTION",
 		"EventPrerequisiteFlags": [
-			"TutorialInventory_Done"
+			"TutorialInventory_Done",
+			"ActionTeleportToKitchenEntrance_Done"
 		],
 		"EventCompletionFlags": [
 			"ActionStartCookingQuest_Done"
@@ -692,6 +727,22 @@
 			"ActionDoughDivide_Done"
 		],
 		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionTeleportToKitchenEntrance": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialTeleport_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionTeleportToKitchenEntrance_Done"
+		],
+		"Oneshot": false,
 		"EventText": {
 
 		},
