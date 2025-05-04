@@ -85,5 +85,22 @@
 		"QuestCompletionFlags": [
 			"QuestContinueMakeNutribun_Done"
 		]
+	},
+	"QuestFinishBedroom": {
+		"QuestDescription": {
+			"Name": "Finish the Bedroom Task",
+			"Description": "Go to the bedroom and finish all the tasks there."
+		},
+		"QuestCompletionTracker": {
+			"Open the Safe by finding the code": [
+				"ActionOpenSafe_Done"
+			],
+			"Open the Briefcase by finding the contract": [
+				"ActionOpenBriefcase_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestFinishBedroom_Done"
+		]
 	}
 }

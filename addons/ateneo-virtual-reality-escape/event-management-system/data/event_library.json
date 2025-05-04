@@ -749,5 +749,51 @@
 		"EventLocations": [],
 		"DialogueClickable": false,
 		"AudioSourceFile": ""
+	},
+	"ActionOpenSafe": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionOpenSafe_Done",
+			"Safe_Open"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionOpenBriefcase": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionOpenBriefcase_Done",
+			"Briefcase_Open"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"TempActionTeleportToBedroom": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialTeleport_Done"
+		],
+		"EventCompletionFlags": [
+			"TempActionTeleportToBedroom_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
 	}
 }
