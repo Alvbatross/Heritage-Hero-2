@@ -795,5 +795,87 @@
 		"EventLocations": [],
 		"DialogueClickable": false,
 		"AudioSourceFile": ""
+	},
+	"RadioNutribunIngredients": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [
+			"ActionBowlMix4_Done"
+		],
+		"EventCompletionFlags": [
+			"RadioNutribunIngredients_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "Chef Bunjamin",
+					"Line": "Of course, if you’re trying to save money, you can use cheaper ingredients.",
+					"Time": 9.0
+				},
+				{
+					"Character": "Presenter",
+					"Line": "So, Chef Bunjamin, how do we start?",
+					"Time": 5.0
+				},
+				{
+					"Character": "Presenter",
+					"Line": "Wow, so, I can start doing this when I get home?",
+					"Time": 3.0
+				},
+				{
+					"Character": "Chef Bunjamin",
+					"Line": "Yes! After that, you can start kneading the dough.",
+					"Time": 4.0
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_02_MissingIng_OfCourseIf.ogg"
+	},
+	"RadioNutribunSeal": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [
+			"ActionOvenNutribun_Done"
+		],
+		"EventCompletionFlags": [
+			"RadioNutribunSeal_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "Presenter",
+					"Line": "I hope everyone followed Chef Bunjamin's recipe for delicious pandesal. Any tips for storing them?",
+					"Time": 6.0
+				},
+				{
+					"Character": "Chef Bunjamin",
+					"Line": "Store them in sealed bags and keep them in a cool, dry place for maximum freshness.",
+					"Time": 7.0
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_03_PackBuns_IHopeEveryone.ogg"
+	},
+	"AddNutribunsToBox": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionOvenNutribun_Done"
+		],
+		"EventCompletionFlags": [
+			"AddNutribunsToBox_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
 	}
 }
