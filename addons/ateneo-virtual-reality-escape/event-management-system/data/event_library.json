@@ -877,5 +877,136 @@
 		"EventLocations": [],
 		"DialogueClickable": false,
 		"AudioSourceFile": ""
+	},
+	"ActionAssembleDocument": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionAssembleDocument_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"TutorialAttachAction": {
+		"EventCategory": "TUTORIAL",
+		"EventPrerequisiteFlags": [
+			"ActionTeleportToStudy_Done",
+			"ActionTeleportToStudyDesk_Done"
+		],
+		"EventCompletionFlags": [
+			"TutorialAttachAction_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+			"Name": "Tutorial",
+			"Text": [
+				{
+					"Character": "Tutorial",
+					"Line": "Some objects can be attached to each other.",
+					"Time": 3.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "This can be done by holding objects close to each other",
+					"Time": 5.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Then, press the trigger on both controllers.",
+					"Time": 3.0
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Doing so will attach compatible objects with each other.",
+					"Time": 3.0
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionTeleportToStudy": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialTeleport_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionTeleportToStudy_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionTeleportToStudyDesk": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialTeleport_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionTeleportToStudyDesk_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionSprayPainting": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"QuestFindTheCodeToTheDesk_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionSprayPainting_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionWipePainting": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionSprayPainting_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionWipePainting_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionOpenDeskDrawer": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionOpenDeskDrawer_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
 	}
 }

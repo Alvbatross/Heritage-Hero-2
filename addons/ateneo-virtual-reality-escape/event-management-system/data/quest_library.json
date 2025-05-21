@@ -105,5 +105,36 @@
 		"QuestCompletionFlags": [
 			"QuestFinishBedroom_Done"
 		]
+	},
+	"QuestFindTheCodeToTheDesk": {
+		"QuestDescription": {
+			"Name": "Find the Code to the Desk",
+			"Description": "The desk has a 3-digit code, it must be somewhere."
+		},
+		"QuestCompletionTracker": {
+			"Fix the torn Document": [
+				"ActionAssembleDocument_Done"
+			],
+			"Unlock the Desk Drawer": [
+				"ActionOpenDeskDrawer_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestFindTheCodeToTheDesk_Done"
+		]
+	},
+	"QuestCleanThePainting": {
+		"QuestDescription": {
+			"Name": "Find the Code by Cleaning The Painting",
+			"Description": "The document says something about cleaning a painting, find the painting somewhere around the house and clean it."
+		},
+		"QuestCompletionTracker": {
+			"Clean The Painting": [
+				"ActionWipePainting_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestCleanThePainting_Done"
+		]
 	}
 }
