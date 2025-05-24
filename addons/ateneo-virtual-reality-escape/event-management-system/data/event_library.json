@@ -1008,5 +1008,33 @@
 		"EventLocations": [],
 		"DialogueClickable": false,
 		"AudioSourceFile": ""
+	},
+	"ActionUnlockGate": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionUnlockGate_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionRemovePlanks": {
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionRemovePlanks_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
 	}
 }
