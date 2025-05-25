@@ -560,7 +560,7 @@
 		"AudioSourceFile": ""
 	},
 	"KeyItemMalakasMaganda": {
-		"EventCategory": "DIALOGUE",
+		"EventCategory": "KEYITEM",
 		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [
 			"KeyItemMalakasMaganda_Done"
@@ -571,10 +571,10 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": ""
+		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_02_AppropFil.ogg"
 	},
 	"KeyItemNutribun": {
-		"EventCategory": "DIALOGUE",
+		"EventCategory": "KEYITEM",
 		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [
 			"KeyItemNutribun_Done"
@@ -585,10 +585,10 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": ""
+		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_04_TheNutribun.ogg"
 	},
 	"KeyItemRolexWatch": {
-		"EventCategory": "DIALOGUE",
+		"EventCategory": "KEYITEM",
 		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [
 			"KeyItemRolexWatch_Done"
@@ -599,10 +599,10 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": ""
+		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_07_RolexWatch.ogg"
 	},
 	"KeyItemGiraffe": {
-		"EventCategory": "DIALOGUE",
+		"EventCategory": "KEYITEM",
 		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [
 			"KeyItemGiraffe_Done"
@@ -613,10 +613,10 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": ""
+		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_03_CalauitSafPark.ogg"
 	},
 	"KeyItemButbutCloth": {
-		"EventCategory": "DIALOGUE",
+		"EventCategory": "KEYITEM",
 		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [
 			"KeyItemButbutCloth_Done"
@@ -627,10 +627,10 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": ""
+		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_05_MacliingDulag.ogg"
 	},
 	"KeyItemManilaFilmCenter": {
-		"EventCategory": "DIALOGUE",
+		"EventCategory": "KEYITEM",
 		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [
 			"KeyItemManilaFilmCenter_Done"
@@ -641,7 +641,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": ""
+		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_06_ManilaFilmCenter.ogg"
 	},
 	"ActionPackageNutribun": {
 		"EventCategory": "ACTION",
