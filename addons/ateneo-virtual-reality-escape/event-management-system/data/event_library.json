@@ -567,7 +567,39 @@
 		],
 		"Oneshot": false,
 		"EventText": {
-
+			"Name": "Key Item",
+			"Text": [
+				{
+					"Character": "Malakas at Maganda Tape",
+					"Line": "Appropriating Filipino mythical figures such as Malakas at Maganda,",
+					"Time": 4.5
+				},
+				{
+					"Character": "Malakas at Maganda Tape",
+					"Line": "the Marcoses projected an image of harmony, prosperity, and order,",
+					"Time": 5.5
+				},
+				{
+					"Character": "Malakas at Maganda Tape",
+					"Line": "remaking Filipino beliefs and values towards a New Society.",
+					"Time": 4.5
+				},
+				{
+					"Character": "Malakas at Maganda Tape",
+					"Line": "Through propaganda, they portrayed themselves as the ultimate embodiment of strength and beauty.",
+					"Time": 6.5
+				},
+				{
+					"Character": "Malakas at Maganda Tape",
+					"Line": "Manipulating cultural heritage became a key feature of the dictatorship,",
+					"Time": 5.0
+				},
+				{
+					"Character": "Malakas at Maganda Tape",
+					"Line": "using art, media, and public imagery to maintain power and legitimacy.",
+					"Time": 5.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
@@ -581,7 +613,34 @@
 		],
 		"Oneshot": false,
 		"EventText": {
-
+			"Name": "Key Item",
+			"Text": [
+				{
+					"Character": "Nutribun Tape",
+					"Line": "The Nutribun, funded by USAID, was touted by the Marcos regime as a solution to malnutrition to address hunger and food security.",
+					"Time": 9.5
+				},
+				{
+					"Character": "Nutribun Tape",
+					"Line": "It became a propaganda tool, with the Marcoses claiming credit for its success.",
+					"Time": 5.5
+				},
+				{
+					"Character": "Nutribun Tape",
+					"Line": "However, it lacked the nutritional value needed for the growing Filipino children.",
+					"Time": 5.0
+				},
+				{
+					"Character": "Nutribun Tape",
+					"Line": "The Nutribun masked the government’s failures and used foreign aid to project an image of competence",
+					"Time": 7.0
+				},
+				{
+					"Character": "Nutribun Tape",
+					"Line": "while ignoring deeper issues of hunger and inequality.",
+					"Time": 4.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
@@ -595,7 +654,35 @@
 		],
 		"Oneshot": false,
 		"EventText": {
-
+			"Name": "Key Item",
+			"Text": [
+				{
+					"Character": "Rolex Watch Tape",
+					"Line": "The Rolex watch symbolized the regime's corruption and cronyism.",
+					"Time": 4.5
+				},
+				{
+					"Character": "Rolex Watch Tape",
+					"Line": "This luxury watch became a token to twelve high-ranking military officials and civilian advisers who planned and implemented Martial Law.",
+					"Time": 10.0
+				},
+				{
+					"Character": "It highlighted how Marcos rewarded loyal allies with luxury.",
+					"Time": 5.0
+				},
+				{
+					"Character": "while using power to control dissent by committing various atrocities",
+					"Time": 5.0
+				},
+				{
+					"Character": "such as torture, killings, seizures of property, displacement from homes, ",
+					"Time": 7.0
+				},
+				{
+					"Character": "warrantless arrests, forced disappearances, and detention without due process.",
+					"Time": 7.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
@@ -609,7 +696,34 @@
 		],
 		"Oneshot": false,
 		"EventText": {
-
+			"Name": "Key Item",
+			"Text": [
+				{
+					"Character": "Calauit Safari Park Tape",
+					"Line": "The Calauit Safari Park, established in 1976 and funded by state resources, housed exotic animals imported from Africa. ",
+					"Time": 9.0
+				},
+				{
+					"Character": "Calauit Safari Park Tape",
+					"Line": "After forcibly evicting and displacing residents such as Tagbanwa families,",
+					"Time": 6.0
+				},
+				{
+					"Character": "Calauit Safari Park Tape",
+					"Line": "the regime transformed the island into a sanctuary for African animals, once called by media as ‘Bongbong’s Safari Park’",
+					"Time": 8.0
+				},
+				{
+					"Character": "Calauit Safari Park Tape",
+					"Line": "a reference to the presidential son's trips to this island.",
+					"Time": 4.0
+				},
+				{
+					"Character": "Calauit Safari Park Tape",
+					"Line": "With only a few animals left on the island, this neglected reserve remains a symbol of misplaced priorities by those in power.",
+					"Time": 9.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
@@ -623,7 +737,26 @@
 		],
 		"Oneshot": false,
 		"EventText": {
-
+			"Name": "Key Item",
+			"Text": [
+				{
+					"Character": "Butbut Tribe Tape",
+					"Line": "Macli-ing Dulag, a leader of the Butbut tribe in the Cordilleras, became a symbol of resistance against the Marcos regime.",
+					"Time": 7.5
+				},
+				{
+					"Character": "He fought against the construction of the Chico River Dam – a project that threatened to displace indigenous communities from their ancestral land.",
+					"Time": 8.5
+				},
+				{
+					"Character": "His activism and assassination highlighted the Marcos regime’s disregard for indigenous peoples’ rights",
+					"Time": 8.0
+				},
+				{
+					"Character": "as the government prioritized development projects for profit over the protection of minority groups.",
+					"Time": 7.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
