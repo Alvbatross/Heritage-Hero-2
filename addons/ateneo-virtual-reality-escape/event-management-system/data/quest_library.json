@@ -70,16 +70,16 @@
 				"ActionKneadDough_Done"
 			],
 			"Divide the Dough into 4 parts": [
-				"ActionKneadDough_Done"
+				"ActionDoughDivide_Done"
 			],
 			"Put pieces of dough in tray": [
-				"ActionKneadDough_Done"
+				"ActionPlaceDoughOnTray_Done"
 			],
 			"Bake the dough": [
-				"ActionKneadDough_Done"
+				"ActionOvenNutribun_Done"
 			],
 			"Put nutribun in packaging": [
-				"ActionKneadDough_Done"
+				"ActionPackageNutribun_Done"
 			],
 			"Place sealed nutribuns in box": [
 				"AddNutribunsToBox_Done"
