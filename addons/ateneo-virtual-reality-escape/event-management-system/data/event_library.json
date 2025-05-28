@@ -773,7 +773,31 @@
 		],
 		"Oneshot": false,
 		"EventText": {
-
+			"Name": "Key Item",
+			"Text": [
+				{
+					"Character": "Manila Film Center Tape",
+					"Line": "The Manila Film Center, completed in 1982 during the Marcos dictatorship, symbolized the regime's 'edifice complex'",
+					"Time": 8.0
+				},
+				{
+					"Character": "Manila Film Center Tape",
+					"Line": "an obsession with grandiose, high-cost projects meant to showcase power and legitimacy.",
+					"Time": 7.0
+				},
+				{
+					"Character": "Its rushed completion to meet its deadline for the inauguration of the Manila International Film Festival",
+					"Time": 6.0
+				},
+				{
+					"Character": "involved the tragic deaths of construction workers who were reportedly trapped and buried under quick-drying wet cement.",
+					"Time": 8.0
+				},
+				{
+					"Character": "While the country faced economic decline, this pursuit of opulence epitomized the regime's incompetence and disregard for human rights.",
+					"Time": 10.0
+				}
+			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
