@@ -136,5 +136,84 @@
 		"QuestCompletionFlags": [
 			"QuestCleanThePainting_Done"
 		]
+	},
+	"QuestPrintArticle": {
+		"QuestDescription": {
+			"Name": "Print an Article on the Truth about Martial Law",
+			"Description": "Find evidence throughout the mansion and print an article about your findings."
+		},
+		"QuestCompletionTracker": {
+			"Find a way to Print": [
+				"ActionTeleportToGate_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestPrintArticle_Done"
+		]
+	},
+	"QuestOpenTheGate": {
+		"QuestDescription": {
+			"Name": "Open the Cell to the Printing Machine",
+			"Description": "The printing machine is locked behind a cell, find a way to open it."
+		},
+		"QuestCompletionTracker": {
+			"Find the Key to the Cell": [
+				"ActionOpenDeskDrawer_Done"
+			],
+			"Open the Cell with the Key": [
+				"ActionUnlockGate_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestOpenTheGate_Done"
+		]
+	},
+	"QuestEnterBedroom": {
+		"QuestDescription": {
+			"Name": "Find a way into the Bedroom",
+			"Description": "The Bedroom Door is Locked, find another way into it."
+		},
+		"QuestCompletionTracker": {
+			"Find another way in": [
+				"ActionTeleportToPlanks_Done"
+			],
+			"Enter the room": [
+				"ActionTeleportToBedroom_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestEnterBedroom_Done"
+		]
+	},
+	"QuestDestroyThePlanks": {
+		"QuestDescription": {
+			"Name": "Remove the Wooden Planks",
+			"Description": "Wooden Planks are blocking your way into the Bedroom, find a way to remove them."
+		},
+		"QuestCompletionTracker": {
+			"Find a tool to remove planks": [
+				"ActionPickUpCrowbar_Done"
+			],
+			"Break through the planks": [
+				"ActionRemovePlanks_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestDestroyThePlanks_Done"
+		]
+	},
+	"QuestGoToKitchen": {
+		"QuestDescription": {
+			"Name": "Go to the Kitchen",
+			"Description": "The Kitchen might have some more information about the Nutribun."
+		},
+		"QuestCompletionTracker": {
+			"Enter the Kitchen": [
+				"ActionTeleportToKitchenEntrance_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestGoToKitchen_Done"
+		]
 	}
 }

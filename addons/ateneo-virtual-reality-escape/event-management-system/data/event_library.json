@@ -745,15 +745,18 @@
 					"Time": 7.5
 				},
 				{
-					"Character": "He fought against the construction of the Chico River Dam – a project that threatened to displace indigenous communities from their ancestral land.",
+					"Character": "Butbut Tribe Tape",
+					"Line": "He fought against the construction of the Chico River Dam – a project that threatened to displace indigenous communities from their ancestral land.",
 					"Time": 8.5
 				},
 				{
-					"Character": "His activism and assassination highlighted the Marcos regime’s disregard for indigenous peoples’ rights",
+					"Character": "Butbut Tribe Tape",
+					"Line": "His activism and assassination highlighted the Marcos regime’s disregard for indigenous peoples’ rights",
 					"Time": 8.0
 				},
 				{
-					"Character": "as the government prioritized development projects for profit over the protection of minority groups.",
+					"Character": "Butbut Tribe Tape",
+					"Line": "as the government prioritized development projects for profit over the protection of minority groups.",
 					"Time": 7.0
 				}
 			]
@@ -870,12 +873,13 @@
 	"ActionTeleportToKitchenEntrance": {
 		"EventCategory": "ACTION",
 		"EventPrerequisiteFlags": [
-			"TutorialTeleport_Done"
+			"TutorialTeleport_Done",
+			"ActionOpenDeskDrawer_Done"
 		],
 		"EventCompletionFlags": [
 			"ActionTeleportToKitchenEntrance_Done"
 		],
-		"Oneshot": false,
+		"Oneshot": true,
 		"EventText": {
 
 		},
@@ -913,13 +917,13 @@
 		"DialogueClickable": false,
 		"AudioSourceFile": ""
 	},
-	"TempActionTeleportToBedroom": {
+	"ActionTeleportToBedroom": {
 		"EventCategory": "ACTION",
 		"EventPrerequisiteFlags": [
 			"TutorialTeleport_Done"
 		],
 		"EventCompletionFlags": [
-			"TempActionTeleportToBedroom_Done"
+			"ActionTeleportToBedroom_Done"
 		],
 		"Oneshot": false,
 		"EventText": {
@@ -1157,12 +1161,58 @@
 		"AudioSourceFile": ""
 	},
 	"ActionRemovePlanks": {
-		"EventCategory": "DIALOGUE",
+		"EventCategory": "ACTION",
 		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [
 			"ActionRemovePlanks_Done"
 		],
 		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionTeleportToPlanks": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialTeleport_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionTeleportToPlanks_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionPickUpCrowbar": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionPickUpCrowbar_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionTeleportToGate": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"TutorialTeleport_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionTeleportToGate_Done"
+		],
+		"Oneshot": false,
 		"EventText": {
 
 		},
