@@ -509,22 +509,10 @@
 		],
 		"Oneshot": true,
 		"EventText": {
-			"Name": "Nutribun Baking Section",
-			"Text": [
-				{
-					"Character": "Nutribun Baking Section",
-					"Line": "Hello there, let's try preparing the dough for the nutribun.",
-					"Time": 7.0
-				},
-				{
-					"Character": "Nutribun Baking Section",
-					"Line": "Please note that this is still a work in progress.",
-					"Time": 7.0
-				}
-			]
+
 		},
 		"EventLocations": [],
-		"DialogueClickable": true,
+		"DialogueClickable": false,
 		"AudioSourceFile": ""
 	},
 	"ActionKneadDough": {
