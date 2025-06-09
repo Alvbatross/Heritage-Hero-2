@@ -288,7 +288,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_01_v2_SevPopJap.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_01_v2_SevPopJap_CasetteVer.ogg"
 	},
 	"TutorialKeyItems": {
 		"EventCategory": "TUTORIAL",
@@ -598,7 +598,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_02_AppropFil.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_02_AppropFil_CasetteVer.ogg"
 	},
 	"KeyItemNutribun": {
 		"EventCategory": "KEYITEM",
@@ -639,7 +639,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_04_TheNutribun.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_04_TheNutribun_CasetteVer.ogg"
 	},
 	"KeyItemRolexWatch": {
 		"EventCategory": "KEYITEM",
@@ -685,7 +685,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_07_RolexWatch.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_07_RolexWatch_CasetteVer.ogg"
 	},
 	"KeyItemGiraffe": {
 		"EventCategory": "KEYITEM",
@@ -726,7 +726,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_03_CalauitSafPark.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_03_CalauitSafPark_CasetteVer.ogg"
 	},
 	"KeyItemButbutCloth": {
 		"EventCategory": "KEYITEM",
@@ -762,7 +762,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_05_MacliingDulag.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_05_MacliingDulag_CasetteVer.ogg"
 	},
 	"KeyItemManilaFilmCenter": {
 		"EventCategory": "KEYITEM",
@@ -803,7 +803,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/assets/audio/key-items/VO_nar_7KO_06_ManilaFilmCenter.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/key-items/VO_nar_7KO_06_ManilaFilmCenter_CasetteVer.ogg"
 	},
 	"ActionPackageNutribun": {
 		"EventCategory": "ACTION",
