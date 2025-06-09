@@ -1,7 +1,9 @@
 {
 	"TutorialInventory": {
 		"EventCategory": "TUTORIAL",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"GameStart_Done"
+		],
 		"EventCompletionFlags": [
 			"TutorialInventory_Done"
 		],
@@ -11,26 +13,31 @@
 			"Text": [
 				{
 					"Character": "Tutorial",
-					"Line": "Press the 'X' button on the Left Controller.",
-					"Time": 3.0
+					"Line": "Press the 'X' button on the Left Hand Controller to view your inventory.",
+					"Time": 4.8
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "This opens the inventory system.",
-					"Time": 3.0
+					"Line": "Press 'X' again to hide it.",
+					"Time": 2.4
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "Pressing the 'X' button again closes the inventory.",
-					"Time": 3.0
+					"Line": "To grab an object in the inventory, reach out to it and hold your hand controller’s grip button. ",
+					"Time": 6.6
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Release the grip button to let go. ",
+					"Time": 2.43
 				}
 			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
 		],
-		"DialogueClickable": true,
-		"AudioSourceFile": ""
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/tutorials/VO_tutor_Inventory.ogg"
 	},
 	"ActionPickUpJournal": {
 		"EventCategory": "ACTION",
@@ -63,30 +70,40 @@
 				{
 					"Character": "Tutorial",
 					"Line": "This is your Journal.",
-					"Time": 2.0
+					"Time": 1.85
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "This is the Task List Section of the Journal.",
-					"Time": 2.0
+					"Line": "The Task List on the Journal’s first page lists down the tasks you need to accomplish.",
+					"Time": 6.6
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "This section contains information about the current task you need to accomplish.",
-					"Time": 2.0
+					"Line": "To flip the pages of the Journal, put your hand controller on the edge of the page,",
+					"Time": 5.75
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "Make sure to check your Journal often to see updates about your task progress.",
-					"Time": 2.0
+					"Line": "then hold the grip button and swipe from right-to-left or left-to-right.",
+					"Time": 5.3
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Letting go of the Journal returns it to its inventory slot.",
+					"Time": 4.2
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Make sure to check your Journal often to track your progress!",
+					"Time": 4.13
 				}
 			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
 		],
-		"DialogueClickable": true,
-		"AudioSourceFile": ""
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/tutorials/VO_tutor_Journal.ogg"
 	},
 	"ActionPickUpFlashlight": {
 		"EventCategory": "ACTION",
@@ -118,36 +135,31 @@
 			"Text": [
 				{
 					"Character": "Tutorial",
-					"Line": "This is the Flashlight Radio.",
-					"Time": 2.0
+					"Line": "This is the Flashlight Radio, useful for navigating dark areas.",
+					"Time": 5.4
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "This is useful as a light source when navigating dark areas.",
-					"Time": 2.0
+					"Line": "Operate the flashlight’s crank by holding the grip button on your other hand controller.",
+					"Time": 6.1
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "You can also grab on to the crank.",
-					"Time": 2.0
+					"Line": "Letting go of the flashlight puts it in a slot near your waist and keeps the light facing forward.",
+					"Time": 7.2
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "Cranking the flashlight 3 times will give you a hint about how to progress",
-					"Time": 2.0
-				},
-				{
-					"Character": "Tutorial",
-					"Line": "Give it a go!",
-					"Time": 1.0
+					"Line": "If you rotate the flashlight’s crank 3 times, the built-in radio will ‘broadcast’ a hint! Give it a go!",
+					"Time": 7.19
 				}
 			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
 		],
-		"DialogueClickable": true,
-		"AudioSourceFile": ""
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/tutorials/VO_tutor_Flashlight.ogg"
 	},
 	"TutorialTeleport": {
 		"EventCategory": "TUTORIAL",
@@ -165,30 +177,35 @@
 				{
 					"Character": "Tutorial",
 					"Line": "The circles on the ground are movement points.",
-					"Time": 2.0
+					"Time": 3.5
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "Pointing at them and pressing the trigger will move you to the location of the circle.",
-					"Time": 2.0
+					"Line": "Pointing at them and pressing the trigger button will move you to that area.",
+					"Time": 6.0
 				},
 				{
 					"Character": "Tutorial",
 					"Line": "White Circles are movement points you can access at your current location.",
-					"Time": 2.0
+					"Time": 5.3
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "Blue Circles are movement points are inaccessible for a variety of reasons, whether it be task requirements or distance.",
-					"Time": 2.0
+					"Line": "Blue Circles are movement points that are not yet accessible.",
+					"Time": 4.7
+				},
+				{
+					"Character": "Tutorial",
+					"Line": "Either you’re too far away, or you can’t go there yet.",
+					"Time": 3.68
 				}
 			]
 		},
 		"EventLocations": [
 			"Mansion Entrance"
 		],
-		"DialogueClickable": true,
-		"AudioSourceFile": ""
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/tutorials/VO_tutor_Teleport.ogg"
 	},
 	"ActionTeleportToSofas": {
 		"EventCategory": "ACTION",
@@ -287,39 +304,29 @@
 			"Text": [
 				{
 					"Character": "Tutorial",
-					"Line": "In your journal, you will find a section that has newspaper headlines relating to real world events.",
-					"Time": 2.0
+					"Line": "In your Journal, you will find newspaper headlines relating to real world events.",
+					"Time": 6.4
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "Throughout the game you will find objects related to these headlines.",
-					"Time": 2.0
+					"Line": "You will find ‘key objects’ related to these headlines. The picture on the living room table is one such object.",
+					"Time": 9.4
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "The picture on the living room table is one such object",
-					"Time": 2.0
+					"Line": "Near these key objects are cassette tapes. These tapes will give you information about the objects.",
+					"Time": 7.9
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "Near these objects are cassette tapes.",
-					"Time": 2.0
-				},
-				{
-					"Character": "Tutorial",
-					"Line": "These cassette tapes can be played by putting them in a cassette player and pointing at the cassette player and pressing the trigger.",
-					"Time": 2.0
-				},
-				{
-					"Character": "Tutorial",
-					"Line": "These cassettes will give you information about the objects related to the headlines.",
-					"Time": 2.0
+					"Line": "To play a tape, put them in a cassette player, then point at the cassette player and press your trigger button.",
+					"Time": 8.07
 				}
 			]
 		},
 		"EventLocations": [],
-		"DialogueClickable": true,
-		"AudioSourceFile": ""
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/tutorials/VO_tutor_KeyItems.ogg"
 	},
 	"ActionBowlAddWheatFlour": {
 		"EventCategory": "ACTION",
@@ -1063,29 +1070,19 @@
 			"Text": [
 				{
 					"Character": "Tutorial",
-					"Line": "Some objects can be attached to each other.",
-					"Time": 3.0
+					"Line": "You can attach certain objects to each other!",
+					"Time": 3.3
 				},
 				{
 					"Character": "Tutorial",
-					"Line": "This can be done by holding objects close to each other",
-					"Time": 5.0
-				},
-				{
-					"Character": "Tutorial",
-					"Line": "Then, press the trigger on both controllers.",
-					"Time": 3.0
-				},
-				{
-					"Character": "Tutorial",
-					"Line": "Doing so will attach compatible objects with each other.",
-					"Time": 3.0
+					"Line": "Simply hold these objects close to each other, then press the trigger button on both controllers simultaneously.",
+					"Time": 8.5
 				}
 			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": ""
+		"AudioSourceFile": "res://src/Assets/audio/tutorials/VO_tutor_AttachAction.ogg"
 	},
 	"ActionTeleportToStudy": {
 		"EventCategory": "ACTION",
@@ -1215,7 +1212,7 @@
 		"EventCompletionFlags": [
 			"ActionPickUpCrowbar_Done"
 		],
-		"Oneshot": false,
+		"Oneshot": true,
 		"EventText": {
 
 		},
@@ -1231,7 +1228,21 @@
 		"EventCompletionFlags": [
 			"ActionTeleportToGate_Done"
 		],
-		"Oneshot": false,
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"GameStart": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"GameStart_Done"
+		],
+		"Oneshot": true,
 		"EventText": {
 
 		},
