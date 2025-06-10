@@ -215,5 +215,25 @@
 		"QuestCompletionFlags": [
 			"QuestGoToKitchen_Done"
 		]
+	},
+	"QuestCompletePrintingMachine": {
+		"QuestDescription": {
+			"Name": "Fix and use the printing machine",
+			"Description": "The printing press seems to be missing some parts. It must also be used after."
+		},
+		"QuestCompletionTracker": {
+			"Add green button": [
+				"ActionAddGreenButton_Done"
+			],
+			"Add paper roll": [
+				"ActionAddPaperRoll_Done"
+			],
+			"Use the printing press": [
+				"ActionFinishPrintingItem_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestCompletePrintingMachine_Done"
+		]
 	}
 }
