@@ -1280,9 +1280,25 @@
 	},
 	"ActionFinishPrintingItem": {
 		"EventCategory": "ACTION",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionFinishPrintingItem_Done"
+		],
 		"EventCompletionFlags": [
 			"ActionFinishPrintingItem_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
+	},
+	"ActionLeaveMansion": {
+		"EventCategory": "DIALOGUE",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"ActionLeaveMansion_Done"
 		],
 		"Oneshot": true,
 		"EventText": {

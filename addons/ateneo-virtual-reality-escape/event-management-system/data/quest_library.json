@@ -235,5 +235,19 @@
 		"QuestCompletionFlags": [
 			"QuestCompletePrintingMachine_Done"
 		]
+	},
+	"QuestLeaveTheMansion": {
+		"QuestDescription": {
+			"Name": "Leave the Mansion",
+			"Description": "You have already discovered the truth. It's time to leave the mansion."
+		},
+		"QuestCompletionTracker": {
+			"Exit through the front door": [
+				"ActionLeaveMansion_Done"
+			]
+		},
+		"QuestCompletionFlags": [
+			"QuestLeaveTheMansion_Done"
+		]
 	}
 }
