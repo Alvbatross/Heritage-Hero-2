@@ -876,7 +876,27 @@
 				}
 			]
 		},
-		"EventLocations": [],
+		"EventLocations": [
+			"Near Lampshade",
+			"Dining Room Entrance",
+			"Dining Room Inside",
+			"Dining Room Inside 2",
+			"Dining Room Inside 3",
+			"Dining Room Inside 4",
+			"Dining Room Inside 5",
+			"Path To Kitchen",
+			"Kitchen Area Entrance",
+			"Kitchen Further Entrance",
+			"Kitchen Cabinets",
+			"Kitchen Outside Counter",
+			"Kitchen Outside Counter 3",
+			"Kitchen Outside Counter 4",
+			"Kitchen Part 1",
+			"Kitchen Stove",
+			"Storage Room Inside",
+			"Storage Room Inside2",
+			"Storage Room Entrance"
+		],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_NeededIng_GoodMorningManila_wMX.ogg"
 	},
@@ -988,7 +1008,27 @@
 				}
 			]
 		},
-		"EventLocations": [],
+		"EventLocations": [
+			"Near Lampshade",
+			"Dining Room Entrance",
+			"Dining Room Inside",
+			"Dining Room Inside 2",
+			"Dining Room Inside 3",
+			"Dining Room Inside 4",
+			"Dining Room Inside 5",
+			"Path To Kitchen",
+			"Kitchen Area Entrance",
+			"Kitchen Further Entrance",
+			"Kitchen Cabinets",
+			"Kitchen Outside Counter",
+			"Kitchen Outside Counter 3",
+			"Kitchen Outside Counter 4",
+			"Kitchen Part 1",
+			"Kitchen Stove",
+			"Storage Room Inside",
+			"Storage Room Inside2",
+			"Storage Room Entrance"
+		],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_MissingIng_OfCourseIf_wMX.ogg"
 	},
@@ -1016,7 +1056,27 @@
 				}
 			]
 		},
-		"EventLocations": [],
+		"EventLocations": [
+			"Near Lampshade",
+			"Dining Room Entrance",
+			"Dining Room Inside",
+			"Dining Room Inside 2",
+			"Dining Room Inside 3",
+			"Dining Room Inside 4",
+			"Dining Room Inside 5",
+			"Path To Kitchen",
+			"Kitchen Area Entrance",
+			"Kitchen Further Entrance",
+			"Kitchen Cabinets",
+			"Kitchen Outside Counter",
+			"Kitchen Outside Counter 3",
+			"Kitchen Outside Counter 4",
+			"Kitchen Part 1",
+			"Kitchen Stove",
+			"Storage Room Inside",
+			"Storage Room Inside2",
+			"Storage Room Entrance"
+		],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_PackBuns_IHopeEveryone_wMX.ogg"
 	},
@@ -1305,7 +1365,9 @@
 	},
 	"RadioPieceDocument": {
 		"EventCategory": "RADIO",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"TutorialAttachAction_Done"
+		],
 		"EventCompletionFlags": [
 			"RadioPieceDocument_Done"
 		],
@@ -1351,7 +1413,9 @@
 	},
 	"RadioCleanPainting": {
 		"EventCategory": "RADIO",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionAssembleDocument_Done"
+		],
 		"EventCompletionFlags": [
 			"RadioCleanPainting_Done"
 		],
@@ -1397,7 +1461,9 @@
 	},
 	"RadioDeskCode": {
 		"EventCategory": "RADIO",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"QuestCleanThePainting_Done"
+		],
 		"EventCompletionFlags": [
 			"RadioDeskCode_Done"
 		],
@@ -1428,7 +1494,9 @@
 	},
 	"RadioBreakthrough": {
 		"EventCategory": "RADIO",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionPickUpCrowbar_Done"
+		],
 		"EventCompletionFlags": [
 			"RadioBreakthrough_Done"
 		],
@@ -1473,13 +1541,36 @@
 				}
 			]
 		},
-		"EventLocations": [],
+		"EventLocations": [
+			"Hallway",
+			"Hallway 2",
+			"Study Room Planks Area",
+			"Study Room Entrance",
+			"Study Room",
+			"Study Room Near Planks",
+			"Study Room Desk",
+			"Study Room Near Desk",
+			"Study Room Printing Press",
+			"Bedroom Center",
+			"Bedroom Broken Wall",
+			"Bedroom Study Table",
+			"Bedroom Safe",
+			"Blueprint Wall 1",
+			"Blueprint Wall 2",
+			"Blueprint Wall 3",
+			"Blueprint Wall 4",
+			"Bed Right Picture",
+			"Bed Left Picture",
+			"Window Right Picture"
+		],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_hosts_HINT_BreakSecretDoor_YouAreListening_wMX.ogg"
 	},
 	"RadioBlueprints": {
 		"EventCategory": "RADIO",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionTeleportToBedroom_Done"
+		],
 		"EventCompletionFlags": [
 			"RadioBlueprints_Done"
 		],
@@ -1529,13 +1620,36 @@
 				}
 			]
 		},
-		"EventLocations": [],
+		"EventLocations": [
+			"Hallway",
+			"Hallway 2",
+			"Study Room Planks Area",
+			"Study Room Entrance",
+			"Study Room",
+			"Study Room Near Planks",
+			"Study Room Desk",
+			"Study Room Near Desk",
+			"Study Room Printing Press",
+			"Bedroom Center",
+			"Bedroom Broken Wall",
+			"Bedroom Study Table",
+			"Bedroom Safe",
+			"Blueprint Wall 1",
+			"Blueprint Wall 2",
+			"Blueprint Wall 3",
+			"Blueprint Wall 4",
+			"Bed Right Picture",
+			"Bed Left Picture",
+			"Window Right Picture"
+		],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_preacher_HINT_MatchImageBluprnt_ThePlans_wMX.ogg"
 	},
 	"RadioContract": {
 		"EventCategory": "RADIO",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"ActionOpenSafe_Done"
+		],
 		"EventCompletionFlags": [
 			"RadioContract_Done"
 		],
@@ -1575,13 +1689,38 @@
 				}
 			]
 		},
-		"EventLocations": [],
+		"EventLocations": [
+			"Hallway",
+			"Hallway 2",
+			"Study Room Planks Area",
+			"Study Room Entrance",
+			"Study Room",
+			"Study Room Near Planks",
+			"Study Room Desk",
+			"Study Room Near Desk",
+			"Study Room Printing Press",
+			"Bedroom Center",
+			"Bedroom Broken Wall",
+			"Bedroom Study Table",
+			"Bedroom Safe",
+			"Blueprint Wall 1",
+			"Blueprint Wall 2",
+			"Blueprint Wall 3",
+			"Blueprint Wall 4",
+			"Bed Right Picture",
+			"Bed Left Picture",
+			"Window Right Picture"
+		],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_repmale_HINT_FindApprvdCntrct_AnUpdateOn.ogg"
 	},
 	"RadioFinalHint": {
 		"EventCategory": "RADIO",
-		"EventPrerequisiteFlags": [],
+		"EventPrerequisiteFlags": [
+			"QuestFinishBedroom_Done",
+			"QuestContinueMakeNutribun_Done",
+			"QuestFindTheCodeToTheDesk_Done"
+		],
 		"EventCompletionFlags": [
 			"RadioFinalHint_Done"
 		],
@@ -1630,7 +1769,28 @@
 				}
 			]
 		},
-		"EventLocations": [],
+		"EventLocations": [
+			"Hallway",
+			"Hallway 2",
+			"Study Room Planks Area",
+			"Study Room Entrance",
+			"Study Room",
+			"Study Room Near Planks",
+			"Study Room Desk",
+			"Study Room Near Desk",
+			"Study Room Printing Press",
+			"Bedroom Center",
+			"Bedroom Broken Wall",
+			"Bedroom Study Table",
+			"Bedroom Safe",
+			"Blueprint Wall 1",
+			"Blueprint Wall 2",
+			"Blueprint Wall 3",
+			"Blueprint Wall 4",
+			"Bed Right Picture",
+			"Bed Left Picture",
+			"Window Right Picture"
+		],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_repmale_FINALTASK_Sep1983.ogg"
 	}
