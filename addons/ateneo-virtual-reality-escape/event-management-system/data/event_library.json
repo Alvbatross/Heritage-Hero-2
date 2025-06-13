@@ -239,12 +239,12 @@
 				{
 					"Character": "Host 1",
 					"Line": "Another breakthrough for democracy the following year: Martial Law was finally lifted!",
-					"Time": 5.0
+					"Time": 4.8
 				},
 				{
 					"Character": "Host 2",
 					"Line": "Yes, democracy was restored. The government had to create a blueprint for a democratic Philippines!",
-					"Time": 8.0
+					"Time": 8.55
 				}
 			]
 		},
@@ -252,7 +252,7 @@
 			"Mansion Entrance"
 		],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_hosts_TUTORIAL_AnotherBreakthrough.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_hosts_TUTORIAL_AnotherBreakthrough_wMX.ogg"
 	},
 	"KeyItemDaiVoltZ": {
 		"EventCategory": "KEYITEM",
@@ -878,7 +878,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_01_NeededIng_GoodMorningManila.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_NeededIng_GoodMorningManila_wMX.ogg"
 	},
 	"ActionDoughDivide": {
 		"EventCategory": "ACTION",
@@ -974,28 +974,23 @@
 				{
 					"Character": "Chef Bunjamin",
 					"Line": "Of course, if you’re trying to save money, you can use cheaper ingredients.",
-					"Time": 9.0
+					"Time": 6.0
 				},
 				{
 					"Character": "Presenter",
-					"Line": "So, Chef Bunjamin, how do we start?",
-					"Time": 5.0
-				},
-				{
-					"Character": "Presenter",
-					"Line": "Wow, so, I can start doing this when I get home?",
-					"Time": 3.0
+					"Line": "Wow, so, I can start doing this when I get home?!",
+					"Time": 2.8
 				},
 				{
 					"Character": "Chef Bunjamin",
 					"Line": "Yes! After that, you can start kneading the dough.",
-					"Time": 4.0
+					"Time": 5.8
 				}
 			]
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_02_MissingIng_OfCourseIf.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_MissingIng_OfCourseIf_wMX.ogg"
 	},
 	"RadioNutribunSeal": {
 		"EventCategory": "RADIO",
@@ -1023,7 +1018,7 @@
 		},
 		"EventLocations": [],
 		"DialogueClickable": false,
-		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_03_PackBuns_IHopeEveryone.ogg"
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_chefbun_HINT_PackBuns_IHopeEveryone_wMX.ogg"
 	},
 	"AddNutribunsToBox": {
 		"EventCategory": "ACTION",
@@ -1307,5 +1302,336 @@
 		"EventLocations": [],
 		"DialogueClickable": false,
 		"AudioSourceFile": ""
+	},
+	"RadioPieceDocument": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"RadioPieceDocument_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "DJ",
+					"Line": "This is DJ Avery, and you’re listening to 185.03 Escape FM. ",
+					"Time": 7.7
+				},
+				{
+					"Character": "DJ",
+					"Line": "Here’s something for those whose love letters have been torn apart.",
+					"Time": 4.8
+				},
+				{
+					"Character": "DJ",
+					"Line": "In this season of love, give yourself one more chance, to put the broken pieces of your heart back together again.",
+					"Time": 9.3
+				},
+				{
+					"Character": "Missing Pieces Song",
+					"Line": "You tore my le-tters into pie-ces",
+					"Time": 7.3
+				},
+				{
+					"Character": "Missing Pieces Song",
+					"Line": "And I felt my heart was torn, in two...",
+					"Time": 10.7
+				},
+				{
+					"Character": "Missing Pieces Song",
+					"Line": "How will I- Ever put it all ba-ck Together now?",
+					"Time": 12.0
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_dj_HINT_PcDoc_ThisIsDJ_wMX.ogg"
+	},
+	"RadioCleanPainting": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"RadioCleanPainting_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "Ad Presenter",
+					"Line": "Misis, nahihirapan ka ba sa dumi at amag?",
+					"Time": 4.0
+				},
+				{
+					"Character": "Misis",
+					"Line": "Oo, kahit anong punas ko, di pa din nawawala!",
+					"Time": 4.0
+				},
+				{
+					"Character": "Ad Presenter",
+					"Line": "Try mo ang Stain-Away Spray! Ang pinaka-malakas na cleaning spray",
+					"Time": 4.5
+				},
+				{
+					"Character": "Misis",
+					"Line": "Paano po ito gamitin?",
+					"Time": 2.1
+				},
+				{
+					"Character": "Ad Presenter",
+					"Line": "Isang spray lang, at mawawala na ang lahat ng dumi at amag, pag-punas mo!",
+					"Time": 5.4
+				},
+				{
+					"Character": "Misis",
+					"Line": "Wow! Ang Galing, ang puti na ng mga tile ko! Salamat Stain-Away Spray!",
+					"Time": 7.0
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_ads_HINT_CleanPainting_MrsNahihirapan_wMX.ogg"
+	},
+	"RadioDeskCode": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"RadioDeskCode_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "Weather Reporter",
+					"Line": "And now for the weather! A colorful forecast today:",
+					"Time": 4.4
+				},
+				{
+					"Character": "Weather Reporter",
+					"Line": "Keep an eye on the details. Sometimes information is painted right in front of you. ",
+					"Time": 5.8
+				},
+				{
+					"Character": "Weather Reporter",
+					"Line": "Don’t brush past them, or you might get locked out of clear skies!",
+					"Time": 4.7
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_repweather_HINT_LockStudy_AndNowFor_wMX.ogg"
+	},
+	"RadioBreakthrough": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"RadioBreakthrough_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "Host 1",
+					"Line": "You are listening to Radyo Aenigma. It's only 1980 and the Philippines has seen so many political breakthroughs...",
+					"Time": 7.8
+				},
+				{
+					"Character": "Host 2",
+					"Line": "...all of which have set a blueprint for progress and growth for the next decade.",
+					"Time": 5.5
+				},
+				{
+					"Character": "Host 1",
+					"Line": "What are some of these breakthroughs?",
+					"Time": 2.5
+				},
+				{
+					"Character": "Host 2",
+					"Line": "In 1980, one political breakthrough was Ninoy Aquino was allowed to travel to the US to seek medical treatment.",
+					"Time": 9.0
+				},
+				{
+					"Character": "Host 1",
+					"Line": "Another breakthrough for democracy the following year: Martial Law was finally lifted!",
+					"Time": 5.6
+				},
+				{
+					"Character": "Host 2",
+					"Line": "Yes, democracy was restored. The government had to create a blueprint for a democratic Philippines!",
+					"Time": 6.9
+				},
+				{
+					"Character": "Host 2",
+					"Line": "No doubt, compañera.  We’ll talk about more of these breakthroughs right after the break.",
+					"Time": 7.0
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_hosts_HINT_BreakSecretDoor_YouAreListening_wMX.ogg"
+	},
+	"RadioBlueprints": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"RadioBlueprints_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "Preacher",
+					"Line": "The plans contained everything David had in mind, for the courts of the house of the LORD,",
+					"Time": 7.9
+				},
+				{
+					"Character": "Preacher",
+					"Line": "for all the surrounding rooms, for the treasuries of the house of God and of the dedicated things",
+					"Time": 9.12
+				},
+				{
+					"Character": "Preacher",
+					"Line": " 1 Chronicles 28, verse 12",
+					"Time": 5.6
+				},
+				{
+					"Character": "Preacher",
+					"Line": "What we see here… is divine providence.",
+					"Time": 5.5
+				},
+				{
+					"Character": "Preacher",
+					"Line": "Know that the LORD will MATCH your struggles with his plans, His BLUEPRINTS, for your life.",
+					"Time": 9.9
+				},
+				{
+					"Character": "Preacher",
+					"Line": "Let us celebrate His divine providence with a response.",
+					"Time": 5.8
+				},
+				{
+					"Character": "Preacher",
+					"Line": "Oh Lord, SHAPE our lives according to thy blueprints!",
+					"Time": 5.75
+				},
+				{
+					"Character": "Congregation",
+					"Line": "Oh Lord, SHAPE our lives according to thy blueprints!",
+					"Time": 5.7
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_preacher_HINT_MatchImageBluprnt_ThePlans_wMX.ogg"
+	},
+	"RadioContract": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"RadioContract_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "News Reporter",
+					"Line": "An update on the terrible tragedy that befallen the construction site of the Manila Film Center earlier last week.",
+					"Time": 7.0
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "only seven people have died in the accident so far, but this has been hard to verify due to the delayed rescue operations.",
+					"Time": 8.8
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "Historically, increased scrutiny was given to other building projects of the Cultural Center of the Philippines,",
+					"Time": 6.7
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "such as the Theater of Performing Arts near Manila Bay, Folk Arts Theatre, Philippine International Conference Center, and the Coconut Palace.",
+					"Time": 9.9
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "First Lady Imelda Marcos is giving multiple assurances- *crackle* ",
+					"Time": 4.2
+				},
+				{
+					"Character": "News Reporter",
+					"Line": " -Film Festival is still scheduled to take place early next year, in January.",
+					"Time": 4.9
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_repmale_HINT_FindApprvdCntrct_AnUpdateOn.ogg"
+	},
+	"RadioFinalHint": {
+		"EventCategory": "RADIO",
+		"EventPrerequisiteFlags": [],
+		"EventCompletionFlags": [
+			"RadioFinalHint_Done"
+		],
+		"Oneshot": false,
+		"EventText": {
+			"Name": "Radio",
+			"Text": [
+				{
+					"Character": "News Reporter",
+					"Line": "September 1983, top of the headlines: ",
+					"Time": 5.2
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "A newspaper publisher had its properties SEIZED this morning by local officials, on suspicion of distributing illegal media.",
+					"Time": 7.7
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "This comes after the newspaper,  *radio crackle* published a story implicating several government officials with the assassination of former senator Benigno Aquino last month.",
+					"Time": 8.9
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "Among the properties seized were several PRINTING PRESS machines, paper reams, and other printing paraphernalia.",
+					"Time": 7.2
+				},
+				{
+					"Character": "A representative of the newspaper declared that these printing presses were not used to PRINT any illegal documents.",
+					"Time": 7.0
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "They decry the seizure as an attack on press freedom.",
+					"Time": 3.5
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "Administration officials have responded that the seizure was unrelated, ",
+					"Time": 4.3
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "pointing out that the RIGHT TO PUBLISH had been restored in early 1981 and that ANY INDIVIDUAL CAN PRINT without obtaining any prior license.",
+					"Time": 9.5
+				}
+			]
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_repmale_FINALTASK_Sep1983.ogg"
 	}
 }
