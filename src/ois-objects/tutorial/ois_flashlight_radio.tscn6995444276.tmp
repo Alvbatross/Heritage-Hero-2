@@ -1,0 +1,523 @@
+[gd_scene load_steps=52 format=3 uid="uid://bq5vkafh6ugil"]
+
+[ext_resource type="Script" uid="uid://ckj2r4ysot3b5" path="res://addons/godot-xr-tools/objects/pickable.gd" id="1_mwdgl"]
+[ext_resource type="AudioStream" uid="uid://ctasi3hcqjdcj" path="res://src/Assets/audio/radio-broadcasts/RadioDialogue0-AlvaroVersion.mp3" id="2_ja3lj"]
+[ext_resource type="PackedScene" uid="uid://d2x1hi2oxwc35" path="res://src/Assets/tutorial-assets/flashlight_with_crank_body.glb" id="2_opwqp"]
+[ext_resource type="Script" uid="uid://fnc6nwvhb2uv" path="res://src/ois-objects/tutorial/crank_rotation_point.gd" id="3_057i6"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="3_lcmkp"]
+[ext_resource type="PackedScene" uid="uid://lv7ltawl4xaa" path="res://src/Assets/tutorial-assets/flashlight_with_crank_crankpart.glb" id="4_xfsum"]
+[ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="5_km7hw"]
+[ext_resource type="Script" uid="uid://blykl6ecn286o" path="res://addons/ateneo-virtual-reality-escape/object-interaction-system/ois-receiver/ois_crank_receiver.gd" id="6_5c7ar"]
+[ext_resource type="PackedScene" uid="uid://bddj5m7ull6g0" path="res://addons/godot-xr-tools/interactables/interactable_handle.tscn" id="7_xmx67"]
+[ext_resource type="Script" uid="uid://bwgbxabctidl3" path="res://src/ois-objects/tutorial/crank.gd" id="8_4ulef"]
+[ext_resource type="PackedScene" uid="uid://ca3daqmpo0tua" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_redirect.tscn" id="8_fauo2"]
+[ext_resource type="Script" uid="uid://cg1lorgur84yy" path="res://addons/ateneo-virtual-reality-escape/object-interaction-system/ois-actor/ois_actor_component.gd" id="9_3pvfy"]
+[ext_resource type="Script" uid="uid://cgettxdui2mmi" path="res://addons/ateneo-virtual-reality-escape/object-interaction-system/ois-state-machine/ois_one_hand_tool_asm.gd" id="10_hhoiq"]
+[ext_resource type="Script" uid="uid://b4ao0gdf7khuq" path="res://addons/ateneo-virtual-reality-escape/object-interaction-system/ois-colliders/ois_collider_area3d.gd" id="11_61l57"]
+[ext_resource type="Script" uid="uid://dq86gvhe6d20d" path="res://addons/ateneo-virtual-reality-escape/inventory-system/inventory_item.gd" id="15_0bilh"]
+[ext_resource type="Script" uid="uid://d4hk5t37ia10e" path="res://src/ois-objects/event-scripts/action_pick_up_flashlight.gd" id="15_tpvu4"]
+[ext_resource type="Script" uid="uid://cww0ubm0hdo61" path="res://src/ois-objects/tutorial/flashlight_control.gd" id="16_b2jsh"]
+[ext_resource type="Script" uid="uid://c31j31dvldneg" path="res://src/ois-objects/event-scripts/radio_broadcast_event.gd" id="17_awhbb"]
+[ext_resource type="Script" uid="uid://cufoy3v1ptb00" path="res://src/ois-objects/tutorial/radio_broadcasts.gd" id="18_hrrgg"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="20_o0gk5"]
+[ext_resource type="PackedScene" uid="uid://oeucxr8uxr2o" path="res://src/ois-objects/tutorial/indicator.tscn" id="21_bihkh"]
+[ext_resource type="PackedScene" uid="uid://c1pv5eyb3pnow" path="res://src/Assets/00-general-3d-assets/grab_particle.tscn" id="22_bihkh"]
+[ext_resource type="AudioStream" uid="uid://bvabd4osuav5s" path="res://src/Assets/audio/radio-broadcasts/VO_radio_static_A.ogg" id="22_ecg5m"]
+[ext_resource type="Texture2D" uid="uid://febxpfbrlrie" path="res://src/Assets/00-general-3d-assets/Flare00.PNG" id="22_wpi3a"]
+[ext_resource type="Texture2D" uid="uid://cwydu1gqawdlv" path="res://src/Assets/00-general-3d-assets/Clean.png" id="23_edkbp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vngtg"]
+size = Vector3(0.05, 0.09, 0.175)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_agjgm"]
+height = 0.08
+radius = 0.2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_irigt"]
+radius = 0.05
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4o7uh"]
+radius = 0.1
+
+[sub_resource type="QuadMesh" id="QuadMesh_ecg5m"]
+resource_local_to_scene = true
+size = Vector2(3, 2)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_hrrgg"]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hrrgg"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_hrrgg")
+texture_filter = 1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wpi3a"]
+resource_local_to_scene = true
+size = Vector3(3, 2, 0.02)
+
+[sub_resource type="Curve" id="Curve_vm6bv"]
+_data = [Vector2(0.0327225, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 0.99695), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_ja5ob"]
+curve = SubResource("Curve_vm6bv")
+
+[sub_resource type="Gradient" id="Gradient_eqc7q"]
+colors = PackedColorArray(0.956927, 0.990137, 0.995663, 1, 0.999999, 0.988373, 0.986389, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_lnlxa"]
+gradient = SubResource("Gradient_eqc7q")
+
+[sub_resource type="Curve" id="Curve_38850"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.486726, 0), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_x8khj"]
+curve = SubResource("Curve_38850")
+
+[sub_resource type="Curve" id="Curve_sl68e"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_hbsbo"]
+curve = SubResource("Curve_sl68e")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4r0x7"]
+emission_shape_scale = Vector3(4, 4, 4)
+emission_shape = 1
+emission_sphere_radius = 0.7
+inherit_velocity_ratio = 0.05
+direction = Vector3(0, 0, 0)
+spread = 0.0
+radial_velocity_min = -2.23517e-05
+radial_velocity_max = 0.499978
+gravity = Vector3(0, 0.05, 0)
+scale_min = 0.05
+scale_max = 0.06
+color_ramp = SubResource("GradientTexture1D_lnlxa")
+alpha_curve = SubResource("CurveTexture_ja5ob")
+emission_curve = SubResource("CurveTexture_x8khj")
+hue_variation_min = -0.18
+hue_variation_max = 0.11
+hue_variation_curve = SubResource("CurveTexture_hbsbo")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n4hnc"]
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("22_wpi3a")
+uv1_scale = Vector3(1.015, 1.01, 13.465)
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_ak3hb"]
+material = SubResource("StandardMaterial3D_n4hnc")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6yle0"]
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("23_edkbp")
+heightmap_scale = -0.135
+uv1_scale = Vector3(1.015, 1.01, 13.465)
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_ppbvq"]
+material = SubResource("StandardMaterial3D_6yle0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hrrgg"]
+emission_shape_scale = Vector3(4, 4, 4)
+emission_shape = 1
+emission_sphere_radius = 0.06
+inherit_velocity_ratio = 0.05
+direction = Vector3(0, 0, 0)
+spread = 0.0
+gravity = Vector3(0, 0.05, 0)
+scale_min = 0.01
+scale_max = 0.03
+color_ramp = SubResource("GradientTexture1D_lnlxa")
+alpha_curve = SubResource("CurveTexture_ja5ob")
+emission_curve = SubResource("CurveTexture_x8khj")
+hue_variation_min = 0.15
+hue_variation_max = 0.33
+hue_variation_curve = SubResource("CurveTexture_hbsbo")
+
+[sub_resource type="Animation" id="Animation_wpi3a"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StaticEffect:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-4.221, -25.708]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StaticEffect:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StaticParticle:emitting")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_edkbp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StaticEffect:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-4.221]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StaticEffect:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StaticParticle:emitting")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_u2ntw"]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StaticEffect:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-25.0, -4.221]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StaticEffect:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StaticParticle:emitting")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u2ntw"]
+_data = {
+&"RESET": SubResource("Animation_edkbp"),
+&"fade_in": SubResource("Animation_u2ntw"),
+&"fade_out": SubResource("Animation_wpi3a")
+}
+
+[node name="OISFlashlightRadio" type="RigidBody3D"]
+collision_layer = 4
+collision_mask = 196615
+freeze_mode = 1
+script = ExtResource("1_mwdgl")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0246466, 0.00682881, 0)
+stream = ExtResource("2_ja3lj")
+panning_strength = 3.0
+emission_angle_enabled = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0172836, 0)
+shape = SubResource("BoxShape3D_vngtg")
+
+[node name="flashlight_with_crank_body" parent="." instance=ExtResource("2_opwqp")]
+transform = Transform3D(-0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, 0.000238985, -0.0175262, -0.0211357)
+
+[node name="CrankRotationPoint" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0206707, 0, 0)
+script = ExtResource("3_057i6")
+
+[node name="Hand" type="Marker3D" parent="CrankRotationPoint"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0240435, 0.0965768, 0.0943634)
+
+[node name="GrabPointHandRight" parent="CrankRotationPoint/Hand" instance=ExtResource("3_lcmkp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000233211, 0.0356312, -0.100856)
+visible = true
+
+[node name="flashlight_with_crank_crankpart" parent="CrankRotationPoint" instance=ExtResource("4_xfsum")]
+transform = Transform3D(-0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, -0.0204317, -0.0175262, -0.0211357)
+
+[node name="GrabPointHandLeft2" parent="." instance=ExtResource("5_km7hw")]
+transform = Transform3D(1, 0, 0, 0, 0.743565, 0.668664, 0, -0.668664, 0.743565, 0, -0.0386215, -0.0548383)
+visible = true
+
+[node name="OISCrankReceiver" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.021286, 0, 0)
+script = ExtResource("6_5c7ar")
+single_direction = true
+group = "flashlight"
+requirement = 3.0
+reset_progress = true
+oneshot = false
+receive_from_self = true
+
+[node name="Area3D" type="Area3D" parent="OISCrankReceiver"]
+collision_layer = 536870912
+collision_mask = 536870912
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="OISCrankReceiver/Area3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.0522963, 0, 0)
+shape = SubResource("CylinderShape3D_agjgm")
+
+[node name="Crank" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0479803, 0.0984588, 0.101826)
+script = ExtResource("8_4ulef")
+
+[node name="InteractableHandle" parent="Crank" instance=ExtResource("7_xmx67")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Crank/InteractableHandle"]
+shape = SubResource("SphereShape3D_irigt")
+
+[node name="GrabPointRedirect" parent="Crank/InteractableHandle" node_paths=PackedStringArray("target") instance=ExtResource("8_fauo2")]
+target = NodePath("../../../CrankRotationPoint/Hand/GrabPointHandRight")
+
+[node name="OISActorComponent" type="Node3D" parent="Crank/InteractableHandle"]
+script = ExtResource("9_3pvfy")
+receiver_group = "flashlight"
+
+[node name="OISOneHandToolASM" type="Node3D" parent="Crank/InteractableHandle/OISActorComponent"]
+script = ExtResource("10_hhoiq")
+
+[node name="OISColliderArea3D" type="Node3D" parent="Crank/InteractableHandle/OISActorComponent"]
+script = ExtResource("11_61l57")
+
+[node name="Area3D" type="Area3D" parent="Crank/InteractableHandle/OISActorComponent/OISColliderArea3D"]
+collision_layer = 536870912
+collision_mask = 536870912
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Crank/InteractableHandle/OISActorComponent/OISColliderArea3D/Area3D"]
+shape = SubResource("SphereShape3D_4o7uh")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0660399)
+spot_range = 12.5
+spot_angle = 30.0
+
+[node name="InventoryItem" type="Node3D" parent="." node_paths=PackedStringArray("defined_mesh", "defined_collision_shape", "additional_mesh")]
+script = ExtResource("15_0bilh")
+unique = true
+defined_mesh = NodePath("../flashlight_with_crank_body")
+defined_collision_shape = NodePath("../CollisionShape3D")
+preferred_scale = 0.6
+object_transform_adjustment = Vector3(-0.02, -0.025, 0)
+object_rotation_adjustment = Vector3(0, 180, 0)
+additional_mesh = NodePath("../CrankRotationPoint/flashlight_with_crank_crankpart")
+
+[node name="ActionPickUpFlashlight" type="Node" parent="."]
+script = ExtResource("15_tpvu4")
+event_name = "ActionPickUpFlashlight"
+
+[node name="FlashlightControl" type="Node" parent="."]
+script = ExtResource("16_b2jsh")
+
+[node name="RadioBroadcasts" type="Node" parent="."]
+script = ExtResource("18_hrrgg")
+
+[node name="RadioTutorialBroadcast" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "RadioTutorialBroadcast_Done"
+event_name = "RadioTutorialBroadcast"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioNutribunStart" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "ActionBowlMix4_Done"
+event_name = "RadioNutribunStart"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioNutribunIngredients" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "ActionOvenNutribun_Done"
+event_name = "RadioNutribunIngredients"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioNutribunSeal" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "QuestContinueMakeNutribun_Done"
+event_name = "RadioNutribunSeal"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioPieceDocument" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "ActionAssembleDocument_Done"
+event_name = "RadioPieceDocument"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioCleanPainting" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "QuestCleanThePainting_Done"
+event_name = "RadioCleanPainting"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioDeskCode" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "QuestFindTheCodeToTheDesk_Done"
+event_name = "RadioDeskCode"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioBreakthrough" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "ActionRemovePlanks_Done"
+event_name = "RadioBreakthrough"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioBlueprints" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "ActionOpenSafe_Done"
+event_name = "RadioBlueprints"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioContract" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "ActionOpenBriefcase_Done"
+event_name = "RadioContract"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="RadioFinalHint" type="Node" parent="RadioBroadcasts"]
+script = ExtResource("17_awhbb")
+stop_flag = "QuestCompletePrintingMachine_Done"
+event_name = "RadioFinalHint"
+metadata/_custom_type_script = "uid://bg8ikbbyucdg6"
+
+[node name="Viewport2Din3D" parent="." instance=ExtResource("20_o0gk5")]
+transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, 0.0590316, 0, 0)
+enabled = false
+viewport_size = Vector2(1600, 900)
+unshaded = true
+
+[node name="Viewport" parent="Viewport2Din3D" index="0"]
+size = Vector2i(1600, 900)
+
+[node name="Indicator" parent="Viewport2Din3D/Viewport" index="0" instance=ExtResource("21_bihkh")]
+
+[node name="Screen" parent="Viewport2Din3D" index="1"]
+mesh = SubResource("QuadMesh_ecg5m")
+surface_material_override/0 = SubResource("StandardMaterial3D_hrrgg")
+
+[node name="StaticBody3D" parent="Viewport2Din3D" index="2"]
+viewport_size = Vector2(1600, 900)
+
+[node name="CollisionShape3D" parent="Viewport2Din3D/StaticBody3D" index="0"]
+shape = SubResource("BoxShape3D_wpi3a")
+
+[node name="StaticParticle" type="GPUParticles3D" parent="."]
+transform = Transform3D(-0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, 0.00677698, 0.028895, -0.0100619)
+emitting = false
+amount = 100
+lifetime = 6.0
+one_shot = true
+preprocess = 1.0
+randomness = 1.0
+visibility_aabb = AABB(-0.5, -0.5, -0.5, 1, 1, 1)
+process_material = SubResource("ParticleProcessMaterial_4r0x7")
+draw_passes = 2
+draw_pass_1 = SubResource("QuadMesh_ak3hb")
+draw_pass_2 = SubResource("QuadMesh_ppbvq")
+
+[node name="GrabParticle" parent="." instance=ExtResource("22_bihkh")]
+transform = Transform3D(-0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, 0.00677698, 0.028895, -0.0100619)
+
+[node name="Particle" parent="GrabParticle" index="0"]
+process_material = SubResource("ParticleProcessMaterial_hrrgg")
+
+[node name="StaticEffect" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("22_ecg5m")
+volume_db = -4.221
+pitch_scale = 0.85
+attenuation_filter_cutoff_hz = 2656.0
+
+[node name="StaticEffectFadeOut" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_u2ntw")
+}
+
+[connection signal="grabbed" from="." to="FlashlightControl" method="_on_ois_flashlight_radio_grabbed"]
+[connection signal="grabbed" from="." to="GrabParticle" method="_on_first_grab"]
+[connection signal="released" from="." to="FlashlightControl" method="_on_ois_flashlight_radio_released"]
+[connection signal="action_completed" from="OISCrankReceiver" to="CrankRotationPoint" method="_on_ois_crank_receiver_action_completed"]
+[connection signal="action_ended" from="OISCrankReceiver" to="CrankRotationPoint" method="_on_ois_crank_receiver_action_ended"]
+[connection signal="action_in_progress" from="OISCrankReceiver" to="CrankRotationPoint" method="_on_ois_crank_receiver_action_in_progress"]
+[connection signal="grabbed" from="Crank/InteractableHandle" to="FlashlightControl" method="_on_interactable_handle_grabbed"]
+[connection signal="released" from="Crank/InteractableHandle" to="FlashlightControl" method="_on_interactable_handle_released"]
+[connection signal="child_exiting_tree" from="RadioBroadcasts" to="RadioBroadcasts" method="_on_child_exiting_tree"]
+
+[editable path="Crank/InteractableHandle"]
+[editable path="Viewport2Din3D"]
+[editable path="Viewport2Din3D/Viewport/Indicator"]
+[editable path="GrabParticle"]

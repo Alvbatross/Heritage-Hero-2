@@ -1659,33 +1659,43 @@
 			"Text": [
 				{
 					"Character": "News Reporter",
-					"Line": "An update on the terrible tragedy that befallen the construction site of the Manila Film Center earlier last week.",
+					"Line": "September 1983, top of the headlines: ",
+					"Time": 5.2
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "A newspaper publisher had its properties SEIZED this morning by local officials, on suspicion of distributing illegal media.",
+					"Time": 7.7
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "This comes after the newspaper,  *radio crackle* published a story implicating several government officials with the assassination of former senator Benigno Aquino last month.",
+					"Time": 8.9
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "Among the properties seized were several PRINTING PRESS machines, paper reams, and other printing paraphernalia.",
+					"Time": 7.2
+				},
+				{
+					"Character": "News Reporter",
+					"Line": "A representative of the newspaper declared that these printing presses were not used to PRINT any illegal documents.",
 					"Time": 7.0
 				},
 				{
 					"Character": "News Reporter",
-					"Line": "only seven people have died in the accident so far, but this has been hard to verify due to the delayed rescue operations.",
-					"Time": 8.8
+					"Line": "They decry the seizure as an attack on press freedom.",
+					"Time": 3.5
 				},
 				{
 					"Character": "News Reporter",
-					"Line": "Historically, increased scrutiny was given to other building projects of the Cultural Center of the Philippines,",
-					"Time": 6.7
+					"Line": "Administration officials have responded that the seizure was unrelated, ",
+					"Time": 4.3
 				},
 				{
 					"Character": "News Reporter",
-					"Line": "such as the Theater of Performing Arts near Manila Bay, Folk Arts Theatre, Philippine International Conference Center, and the Coconut Palace.",
-					"Time": 9.9
-				},
-				{
-					"Character": "News Reporter",
-					"Line": "First Lady Imelda Marcos is giving multiple assurances- *crackle* ",
-					"Time": 4.2
-				},
-				{
-					"Character": "News Reporter",
-					"Line": " -Film Festival is still scheduled to take place early next year, in January.",
-					"Time": 4.9
+					"Line": "pointing out that the RIGHT TO PUBLISH had been restored in early 1981 and that ANY INDIVIDUAL CAN PRINT without obtaining any prior license.",
+					"Time": 9.5
 				}
 			]
 		},
