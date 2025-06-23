@@ -1114,7 +1114,8 @@
 		"EventCategory": "TUTORIAL",
 		"EventPrerequisiteFlags": [
 			"ActionTeleportToStudy_Done",
-			"ActionTeleportToStudyDesk_Done"
+			"ActionTeleportToStudyDesk_Done",
+			"ActionGrabDocumentPiece_Done"
 		],
 		"EventCompletionFlags": [
 			"TutorialAttachAction_Done"
@@ -1794,5 +1795,21 @@
 		],
 		"DialogueClickable": false,
 		"AudioSourceFile": "res://src/Assets/audio/radio-broadcasts/VO_repmale_FINALTASK_Sep1983.ogg"
+	},
+	"ActionGrabDocumentPiece": {
+		"EventCategory": "ACTION",
+		"EventPrerequisiteFlags": [
+			"ActionTeleportToStudyDesk_Done"
+		],
+		"EventCompletionFlags": [
+			"ActionGrabDocumentPiece_Done"
+		],
+		"Oneshot": true,
+		"EventText": {
+
+		},
+		"EventLocations": [],
+		"DialogueClickable": false,
+		"AudioSourceFile": ""
 	}
 }
