@@ -1351,7 +1351,7 @@
 		"AudioSourceFile": ""
 	},
 	"ActionLeaveMansion": {
-		"EventCategory": "DIALOGUE",
+		"EventCategory": "ACTION",
 		"EventPrerequisiteFlags": [],
 		"EventCompletionFlags": [
 			"ActionLeaveMansion_Done"
